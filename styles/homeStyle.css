@@ -278,9 +278,10 @@ footer{
 
 #goBack{
     height:16vh;
+    transition: 250ms;
 }
 #goBack:hover{
-    transition: 50ms;
+    transition: 250ms;
     height: 18vh;
 }
 
