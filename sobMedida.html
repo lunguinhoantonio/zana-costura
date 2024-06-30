@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#E9B8B1" />
+        <link rel="icon" href="logo/zana costuras Logo.png">
+        <script src="scripts/homeScript.js"></script>
+        <link rel="stylesheet" href="styles/sobMedidaStyle.css">
+        <title>Zana Costuras</title>
+        <script src="scripts/sobMedidaScript.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img  src="logo/zana costuras logo sem fundo.webp" style="height:18vh;"></a>
+            <section id="siteSections">
+                <a href="home.html" class="underlined">Home</a>
+                <a href="ajuda.html">Ajuda</a>
+            </section>
+            <section class="buscar">
+                    <input id="inputBusca" onkeyup="filtrar()" type="text" placeholder="O que você procura?">
+                    <ul id="listaProdutos" onblur="">
+                        <li>
+                            <a href="vestidoGalinhaPintadinha.html">
+                                <img width="45" height="" src="image/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="vestido junino">
+                                <span class="item-name">Vestido Galinha Pintadinha</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="estiloCampestre.html">
+                                <img width="45" height="" src="image/903f4a95-204a-4494-b300-abe252848ee0-removebg-preview.png" alt="vestido junino">
+                                <span class="item-name">Vestido estilo Campestre</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="vestidoPrimavera.html">
+                                <img width="45" height="" src="roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="vestido junino">
+                                <span class="item-name">Vestido Primavera</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="vestidoFestaJuninaVermelho.html">
+                                <img width="45" height="" src="image/b2e9d8d0-f50f-485c-9744-73eab95ca585-removebg-preview.png" alt="vestido junino">
+                                <span class="item-name">Vestido festa junina quadriculado vermelho</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="vestidoViolet.html">
+                                <img width="45" height="" src="image/vestido roxo.png" alt="vestido junino">
+                                <span class="item-name">Vestido violet com laço</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="vestidoArcoIrisJunino.html">
+                                <img width="45" height="" src="roupas/a01e793a-679e-4a99-8bca-3b987e371a06-removebg-preview.png" alt="vestido junino">
+                                <span class="item-name">Vestido Arco-Íris junino</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </section>
+            
+                <script src="filtrar.js"></script>
+            </section>  
+        </header>
+        <nav>
+            <h2>Faça sua encomenda</h2>
+        </nav>
+        <main>
+            <div class="wrapper">
+                <div class="div-infoClientes" title="Seção de informações do cliente">
+                    <h3 class="legendas-div">Informações do Cliente</h3>
+                    <form class="formulario-infoClientes">
+                        <h4 class="legendas-input" id="nomeCompleto">Nome Completo</h4>
+                        <input type="text" id="input-nomeCompleto" placeholder="Insira seu nome completo" title="Inserir nome completo" required>
+                        <!-- <h4 class="legendas-input" id="telefone">Telefone</h4>
+                        <input type="tel" id="input-telefone" maxlength="11" placeholder="(XX)XXXXX-XXXX" title="Inserir telefone" required> -->
+                        <h4 class="legendas-input" id="email">E-mail</h4>
+                        <input type="email" id="input-email" placeholder="exemplo@exemplo.com" title="Inserir e-mail" required>
+                        <h4 class="legendas-input">Endereço</h4>
+                        <input type="text" id="input-endereco" placeholder="Bairro, Rua, Número, Complemento" title="Inserir endereço">
+                    </form>
+                </div>
+
+                <div class="div-detalhesPedido" title="Seção de detalhes do pedido">
+                    <h3 class="legendas-div">Detalhes do Pedido</h3>
+                    <form class="formulario-detalhesPedido">
+                        <h4 class="legendas-input">Tipos de Serviço</h4>
+                        <select id="input-tiposServico" title="Selecionar tipo de serviço">
+                            <option value="Conserto" selected>Conserto</option>
+                            <option value="Confecção">Confecção</option>
+                        </select>
+                        <h4 class="legendas-input">Tipo de Roupas</h4>
+                        <select id="input-tiposRoupas" title="Selecionar tipo de roupa"> 
+                            <option value="Vestido" selected>Vestido</option>
+                            <option value="Blusa">Blusa</option>
+                            <option value="Camisa">Camisa</option>
+                            <option value="Regata">Regata</option>
+                            <option value="Calça">Calça</option>
+                            <option value="Short">Short</option>
+                        </select>
+                        <h4 class="legendas-input">Descrição do Pedido</h4>
+                        <input type="text" id="input-descricaoPedido" placeholder="Inserir uma descrição" title="Descrever pedido">
+                    </form>
+                </div>
+
+                <div class="div-medidas" title="Seção de medidas do cliente">
+                    <h3 class="legendas-div">Medidas</h3>
+                    <form class="formulario-medidas">
+                        <h4 class="legendas-input">Busto(cm)</h4>
+                        <input type="number" id="input-busto" min="1" max="99" maxlength="2" title="Inserir tamanho do busto em centímetros" required>
+                        <h4 class="legendas-input">Cintura(cm)</h4>
+                        <input type="number" id="input-cintura" min="1" max="99" maxlength="2" title="Inserir tamanho da cintura em centímetros" required>
+                        <h4 class="legendas-input">Quadril(cm)</h4>
+                        <input type="number" id="input-quadril" min="1" max="99" maxlength="2" title="Inserir tamanho do quadril em centímetros" required>
+                        <h4 class="legendas-input">Comprimento da perna(cm)</h4>
+                        <input type="number" id="input-comprimentoPerna" min="1" max="99" title="Inserir comprimento da perna em centímetros" maxlength="2" required>
+                        <h4 class="legendas-input">Comprimento do braço(cm)</h4>
+                        <input type="number" id="input-comprimentoBraco" min="1" max="99" title="Inserir comprimento do braço em centímetros" maxlength="2" required>
+                        <h4 class="legendas-input">Altura(m)</h4>
+                        <input type="number" id="input-altura" min="1" max="200" maxlength="3" title="Inserir altura em centímetros" required>
+                    </form>
+                </div>
+                <div class="div-orcamento" title="Seção de orçamento">
+                    <h3 class="legendas-div">Orçamento</h3>
+                    <form class="formulario-orcamento">                 
+                        <h4 class="legendas-input" id="legenda-checkboxOrcamento">Quero solicitar orçamento
+                            <input type="checkbox" id="input-checkboxOrcamento" title="Marcar caixa para solicitar orçamento">
+                        </h4>
+                        <h4 class="legendas-input">Observações adicionais</h4>
+                        <input type="text" id="input-infoAdd" placeholder="Inserir informações adicionais" title="Inserir observações do pedido">
+                    </form>
+                </div>
+            </div>
+            <button type="submit" style="margin-bottom:3%;" onclick="sendSobMedida()" title="Enviar todas as informações inseridas para vendedor">Enviar</button>
+        </main>
+    </body>
+</html>

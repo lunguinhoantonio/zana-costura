@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Amatic SC", sans-serif;
+}
+
+h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 2.5em;
+}
+
+h3{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 1.4em;
+}
+
+h4{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 1.4em;
+    font-weight:bolder;
+    text-shadow: #474747;
+}
+
+h5{
+    font-size: 1em;
+}
+
+p{
+    margin-left: 5%;
+}
+
+header{
+    width: 100%;
+    height: 13vh;
+    position: relative;
+    background: #E9B8B1;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:2%;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(244, 244, 244);
+}
+::-webkit-scrollbar {
+    width: 20px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #919090;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #474747;
+
+}
+
+button{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+article{
+    font-size: 1em;
+    /* font-family: "Comfortaa", sans-serif; */
+    font-family: "Amatic SC", sans-serif;
+}
+nav{
+    font-size: 1em;
+    /* font-family: "Comfortaa", sans-serif; */
+    font-family: "Amatic SC", sans-serif;
+}
+
+input{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 22px;
+    border-radius: 100px;
+    border: 1px solid #ddd;
+}
+input[type='number']{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+p{
+    margin-left: 5%;
+}
+
+a{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
+    color:#474747;
+    text-decoration: none;
+    margin:6%;
+    /* font-weight: normal; */
+}
+
+a:hover{
+    font-size:2.6em;
+    text-decoration:underline;
+    transition: 0.2s;
+}
+
+li{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 16px;
+}
+
+
+nav h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #F4E4D5;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main {
+    background-color: white;
+}
+
+.wrapper {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;*/
+    display: grid;
+}
+
+.buscar{
+    display: flex;
+    font-family: "Amatic SC", sans-serif;
+    margin-left: 1%;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: normal;
+    justify-content: center;
+    position: relative;
+    margin-right: 15%;
+}
+
+.div-infoClientes, 
+.div-detalhesPedido, 
+.div-medidas, 
+.div-orcamento {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 6px;
+    background-color: #B0AE99;
+    padding: 2rem;
+    margin: 12px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.legendas-div {
+    display: flex;
+    justify-content: center;
+}
+
+#input-altura, 
+#input-busto, 
+#input-cintura, 
+#input-comprimentoBraco, 
+#input-comprimentoPerna, 
+#input-quadril {
+    width: 30%;
+    border-radius: 6px;
+}
+
+#input-telefone {
+    width: 47%;
+    border-radius: 6px;
+}
+
+#input-tiposServico, 
+#input-tiposRoupas {
+    width: 60%;
+    border-radius: 6px
+}
+#input-email, 
+#input-nomeCompleto {
+    width: 90%;
+    border-radius: 6px;
+}
+
+#input-descricaoPedido, 
+#input-endereco,
+#input-infoAdd {
+    width: 100%;
+    border-radius: 6px;
+}
+
+#input-checkboxOrcamento {
+    width: 100%;
+    height: 100%;
+    max-width: 24px;
+    max-height: 24px;
+    margin: 0px 0px 0px 5%;
+}
+#legenda-checkboxOrcamento {
+    display: flex;
+    align-items: center;
+}
+
+#input-descricaoPedido, 
+#input-infoAdd {
+    padding: 0px 0px 10%;
+
+}
+#input-nomeCompleto,
+#input-telefone,
+#input-email,
+#input-endereco,
+#input-descricaoPedido,
+#input-infoAdd::placeholder {
+    font-weight: 500;
+    padding:0.4%;
+}
+
+main button {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #E9B8B1;
+    transition: 350ms;
+    padding: 1% 5%;
+    font-size: 150%;
+    gap: 8px;
+    margin: 12px auto 0px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+button:hover {
+    background-color: #d6a299;
+    transition: 350ms;
+}
+
+footer {
+    height: 100%;
+    margin: 6rem 0px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+footer a:hover {
+    transition: ease-in 250ms;
+}
+
+.social-links {
+    display: flex;
+    background-color: #F4E4D5;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-around;
+    padding-top: 6px;
+}
+
+#footer-copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #E9B8B1;
+    font: 350 18px/100% 'inter', sans-serif;
+    letter-spacing: 1px;
+}
+
+#siteSections{
+    margin-left: 1%;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+#contacts{
+    width: 30%;
+    height: 100%;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#whatsappLogo,
+#instagramLogo{
+    height:3.4vh;
+    margin-right: 5%;
+}
+
+#listaProdutos{
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    
+}
+
+#listaProdutos li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 100px;
+    margin: 0;
+}
+
+
+#listaProdutos li a:hover{
+    background: #eee;
+    
+}
+
+@media screen and (min-width: 1081px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 1080px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zana Costuras</title>
+    <script src="scripts/homeScript.js"></script>
+    <link rel="stylesheet" href="styles/homeStyle.css">
+    <link rel="icon" href="logo/zana costuras Logo.png">
+    <link rel="stylesheet" href="styles/slider.css">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img  src="logo/zana costuras logo sem fundo.webp" style="height:18vh;"></a>
+        <section id="siteSections">
+            <a href="home.html" class="underlined">Home</a>
+            <a href="ajuda.html">Ajuda</a>
+        </section>
+        <section class="buscar">
+                <input id="inputBusca" onkeyup="filtrar()" type="text" placeholder="O que você procura?">
+                <ul id="listaProdutos" onblur="">
+                    <li>
+                        <a href="vestidoGalinhaPintadinha.html">
+                            <img width="45" height="" src="image/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="vestido junino">
+                            <span class="item-name">Vestido Galinha Pintadinha</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estiloCampestre.html">
+                            <img width="45" height="" src="image/903f4a95-204a-4494-b300-abe252848ee0-removebg-preview.png" alt="vestido junino">
+                            <span class="item-name">Vestido de estilo Campestre</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoPrimavera.html">
+                            <img width="45" height="" src="roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="vestido junino">
+                            <span class="item-name">Vestido Primavera</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoFestaJuninaVermelho.html">
+                            <img width="45" height="" src="image/b2e9d8d0-f50f-485c-9744-73eab95ca585-removebg-preview.png" alt="vestido junino">
+                            <span class="item-name">Vestido festa junina quadriculado vermelho</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoViolet.html">
+                            <img width="45" height="" src="image/vestido roxo.png" alt="vestido junino">
+                            <span class="item-name">Vestido violet com laço</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoArcoIrisJunino.html">
+                            <img width="45" height="" src="roupas/a01e793a-679e-4a99-8bca-3b987e371a06-removebg-preview.png" alt="vestido junino">
+                            <span class="item-name">Vestido Arco-Íris junino</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </section>
+        
+            <script src="filtrar.js"></script>
+        </section>  
+    </header>
+    <section class="slider">
+        <div class="slider-content">
+      
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+        <div class="slide-box primeiro">
+          <a href="vestidoPrimavera.html">Vestido Primavera<img class="img-desktop" src="image/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="slide 1">
+        </a>
+        </div>
+        <div class="slide-box segundo">
+          <a href="vestidoArcoIrisJunino.html">Vestido Arco-Íris junino<img class="img-desktop" src="image/422f62ce-79ba-49c1-860b-98cbdaf021d3-removebg-preview.png" alt="slide 2"></a>
+        </div>
+        <div class="slide-box terceiro">
+          <a href="vestidoFestaJuninaVermelho.html"> Vestido junino quadriculado vermelho<img class="img-desktop" src="image/b2e9d8d0-f50f-485c-9744-73eab95ca585-removebg-preview.png" alt="slide 3"></a>
+        </div>
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+       </section>  
+    <main>
+        <div id="leftColumn" class="column">
+            <!-- divião de prod -->
+            <div class="prod"style="margin-top: 20vh;">
+                <div class="prodLeft">
+                    <img class="prodImg" src="image/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$150,00</h2>
+                        <article>
+                            Vestido Galinha Pintadinha
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoGalinhaPintadinha.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divião de prod -->
+            <!-- divião de prod -->
+            <div class="prod"style="margin-top: 20vh;">
+                <div class="prodLeft">
+                    <img class="prodImg" src="image/vestido roxo.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$220,00</h2>
+                        <article>
+                            Vestido violet com laço
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoViolet.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divião de prod -->
+        </div>
+
+
+
+
+
+
+
+        <div id="middleColumn" class="column">
+            <!-- divião de prod -->
+            <div class="prod"style="margin-top: 20vh;">
+                <div class="prodLeft">
+                    <img class="prodImg" src="roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$150,00</h2>
+                        <article>
+                            Vestido Primavera
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoPrimavera.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divião de prod -->
+            <!-- divião de prod -->
+            <div class="prod"style="margin-top: 20vh;">
+                <div class="prodLeft">
+                    <img class="prodImg" src="roupas/a01e793a-679e-4a99-8bca-3b987e371a06-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$250,00</h2>
+                        <article>
+                            Vestido Arco-Íris junino
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='VestidoArcoIrisJunino.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divião de prod -->
+        </div>
+
+
+
+
+
+        <div id="rightColumn" class="column">
+            <!-- divião de prod -->
+            <div class="prod"style="margin-top: 20vh;">
+                <div class="prodLeft">
+                    <img class="prodImg" src="roupas/dd7b5f28-c8ce-409a-aee3-260795cc4f43-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$150,00</h2>
+                        <article>
+                            Vestido junino quadriculado vermelho
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoFestaJuninaVermelho.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divião de prod -->
+            <!-- divião de prod -->
+            <div class="prod"style="margin-top: 20vh;">
+                <div class="prodLeft">
+                    <img class="prodImg" src="roupas/903f4a95-204a-4494-b300-abe252848ee0-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$150,00</h2>
+                        <article>
+                            Vestido estilo de campestre
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='estiloCampestre.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divião de prod -->
+        </div>
+    </main>
+    <footer>
+        <nav style="margin-left: 10%; margin-bottom: 10%;">
+            <ul>
+                <li><strong><h5>Devs:</h5></strong>
+                    <ul>
+                        <li>Brendo</li>
+                        <li>Antonio</li>
+                        <li>Dalmo</li>
+                        <li>João Pedro</li>
+                        <li>Christian</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><strong><h5>Design:</h5></strong>
+                    <ul>
+                        <li>Dalmo</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <ul>
+                <li><strong><h5>Scrum Masters:</h5></strong>
+                    <ul>
+                        <li>João Pedro</li>
+                        <li>Dalmo</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <section id="contacts">
+            <h4>Contatos:</h4>
+            <a href="https://wa.me/5571988090920"target="_blank" >
+                <div class="displayFlex" style="justify-content: start;">
+                    <img src="logo/whatsapp logo.png" id="whatsappLogo">
+                    <h4>(71)98809-0920</h4>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/zana_costura/"target="_blank">
+                <div class="displayFlex" style="justify-content: start;">            
+                    <img src="logo/instagram logo.png" id="instagramLogo">
+                    <h4>@zana.costuras</h4>
+                </div>
+            </a>    
+            <br>
+            <h4>Zana Costuras&copy</h4>
+            <time>29/06/2024</time>
+        </section>
+        <aside class="displayFlex" style="justify-content: center; align-items: center;">
+            <img src="logo/seta pra cima logo.png" alt="seta pra cima logo" onclick="scrollToTop()" id="goBack">
+        </aside>
+    </footer>
+</body>
+<script src="scripts/slide.js"></script>
+</html>

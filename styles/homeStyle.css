@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    border:0;
+    padding:0;
+}
+
+
+h1{
+    font-family: "Amatic SC", sans-serif;
+}
+
+h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 2.5em;
+}
+
+h3{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 1.4em;
+}
+
+h5{
+    font-size: 1em;
+}
+
+
+header{
+    width: 100%;
+    height: 13vh;
+    position: relative;
+    background: #E9B8B1;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:2%;
+    font-weight: bold;
+}
+
+input{
+    font-family: "Amatic SC", sans-serif;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 22px;
+    border-radius: 100px;
+    border: 1px solid #ddd;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(244, 244, 244);
+}
+::-webkit-scrollbar {
+    width: 20px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #919090;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #474747;
+
+}
+
+
+p{
+    margin-left: 5%;
+}
+
+a{
+    transition: 0.2s;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
+    color:#474747;
+    text-decoration: none;
+    margin:6%;
+    /* font-weight: normal; */
+}
+
+a:hover{
+    font-size:2.6em;
+    text-decoration:underline;
+    transition: 0.2s;
+}
+
+
+/* section{
+    color:blue;
+} */
+
+article{
+    font-size: 1em;
+    font-family: "Comfortaa", sans-serif;
+}
+nav{
+    font-size: 1em;
+    font-family: "Comfortaa", sans-serif;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+li{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 16px;
+}
+
+footer{
+    font-family: "Amatic SC", sans-serif;
+    padding-top: 50px;
+    margin-top: 20%;
+    color:#fdfdfd;
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hide{
+    display:none;
+}
+
+.displayFlex{
+    display: flex;
+    align-items: center;
+}
+
+.underlined{
+    text-decoration:underline;
+}
+
+.displayGrid{
+    display: grid;
+    align-items: center;
+}
+
+.prod{
+    transition: 0.5s;
+    height:46.7vh;
+    width:27.3vw;
+    border-radius: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.prod:hover{
+    transition: 0.5s;
+    background:#F4E4D5;
+    height:47vh;
+    width:27.6vw;
+    border:2px solid #E9B8B1;
+    box-shadow: 2px 2px 3px #474747;
+}
+
+.prodLeft{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.prodRight{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.prodImg{
+    margin-left:5%;
+    height:90%;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.column{
+    display:grid;
+    justify-content: center;
+}
+
+.buyButton{
+    transition: 0.3s;
+    background-color: #E9B8B1;
+    height:10vh;
+    border-radius: 20px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 1.6em;
+    margin-top: 5%;
+    padding: 5%;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #7A7A7A;
+    margin-right: 50%;
+    margin-left: 20%;
+}
+
+.buyButton:hover{
+    transition: 0.3s;
+    padding: 7%;
+    font-size: 1.8em;
+}
+
+.prodDescription{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.prodRightDown{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.buscar{
+    display: flex;
+    font-family: "Amatic SC", sans-serif;
+    margin-left: 1%;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: normal;
+    justify-content: center;
+    position: relative;
+    margin-right: 15%;
+}
+
+.item-name{
+    margin-left: 15px;
+}
+
+#listaProdutos{
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    
+}
+
+#listaProdutos li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 100px;
+    margin: 0;
+}
+
+
+#listaProdutos li a:hover{
+    background: #eee;
+    
+}
+
+
+
+
+
+
+#siteSections{
+    margin-left: 1%;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+#goBack{
+    height:16vh;
+}
+#goBack:hover{
+    transition: 50ms;
+    height: 18vh;
+}
+
+#contacts{
+    width: 30%;
+    height: 100%;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#contacts a{
+    font-size: 1em;
+    margin:0;
+    color:white;
+
+}
+
+#whatsappLogo,
+#instagramLogo{
+    height:3.4vh;
+    margin-right: 5%;
+}
