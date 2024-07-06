@@ -156,10 +156,11 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-var input = getElementById('#inputBusca');
-input.addEventListener('click',()=>{
-    ul.classList.toggle('hide')
-})
+// var input = document.getElementById('inputBusca');
+// var input = 0;
+// input.addEventListener('click',()=>{
+//     ul.classList.toggle('hide')
+// })
 
 document.addEventListener('click',e=>{
     if(!ul.contains(e.target) && e.target !== input){
