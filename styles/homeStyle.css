@@ -50,6 +50,9 @@ header{
     background-color: #f4f4f4;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
 ::-webkit-scrollbar-track {
     background-color: #f4f4f4;
 }
