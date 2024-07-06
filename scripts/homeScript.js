@@ -1,14 +1,14 @@
-var chosenSize=''
+var chosenSize = '';
 function setSize(sizeParameter){
-    chosenSize=sizeParameter
+    chosenSize = sizeParameter;
 }
 
 function send(id){
-    if (chosenSize==''){
-        window.alert('Selecione um tamnho de roupa')
+    if (chosenSize == ''){
+        alert('Selecione um tamanho de roupa');
     }
     else{
-        let title= document.getElementById(id).textContent
+        let title= document.getElementById(id).textContent;
         let size=chosenSize;
         let url=window.location.href;
         let text= encodeURIComponent(`-->  NOVA SOLICITAÇÃO!!  <--
@@ -19,61 +19,61 @@ function send(id){
                  Tamanho: ${size}
         
                  Obrigado(a)`);
-        location.href=('https://wa.me/5571988090920?text='+text)
+        location.href=('https://wa.me/5571988090920?text=' + text);
     }
  
 }
 
 function sendSobMedida(){
-    let userName=document.getElementById('input-nomeCompleto').value
-    let userEmail=document.getElementById('input-email').value
-    let userAdress=document.getElementById('input-endereco').value
-    let typeOfServise=document.getElementById('input-tiposServico').value
-    let typeOfClothe=document.getElementById('input-tiposRoupas').value
-    let descricao=document.getElementById('input-descricaoPedido').value
-    let busto=document.getElementById('input-busto').value
-    let cintura=document.getElementById('input-cintura').value
-    let quadril=document.getElementById('input-quadril').value
-    let comprimentoPerna=document.getElementById('input-comprimentoPerna').value
-    let comprimentoBraco=document.getElementById('input-comprimentoBraco').value
-    let altura=document.getElementById('input-altura').value
-    let boleanOrcamento=document.getElementById('input-checkboxOrcamento')
-    let observacao=document.getElementById('input-infoAdd').value
-    let condRequisicaoOrcamento=''
+    let userName=document.getElementById('input-nomeCompleto').value;
+    let userEmail=document.getElementById('input-email').value;
+    let userAdress=document.getElementById('input-endereco').value;
+    let typeOfServise=document.getElementById('input-tiposServico').value;
+    let typeOfClothe=document.getElementById('input-tiposRoupas').value;
+    let descricao=document.getElementById('input-descricaoPedido').value;
+    let busto=document.getElementById('input-busto').value;
+    let cintura=document.getElementById('input-cintura').value;
+    let quadril=document.getElementById('input-quadril').value;
+    let comprimentoPerna=document.getElementById('input-comprimentoPerna').value;
+    let comprimentoBraco=document.getElementById('input-comprimentoBraco').value;
+    let altura=document.getElementById('input-altura').value;
+    let boleanOrcamento=document.getElementById('input-checkboxOrcamento');
+    let observacao=document.getElementById('input-infoAdd').value;
+    let condRequisicaoOrcamento = '';
 
     if(boleanOrcamento.checked){
-        condRequisicaoOrcamento='Gostaria de solicitar um orçamento'
+        condRequisicaoOrcamento='Gostaria de solicitar um orçamento';
     }
     else{
-        condRequisicaoOrcamento=''
+        condRequisicaoOrcamento = '';
     }
 
-    if(userName==''){
-        window.alert('Escreva seu nome para prosseguir')
+    if(userName == ''){
+        alert('Escreva seu nome completo para prosseguir');
     }
-    else if(userAdress==''){
-        window.alert('Escreva seu endereço para prosseguir')
+    else if(userAdress == ''){
+        alert('Escreva seu endereço para prosseguir');
     }
-    else if(descricao==''){
-        window.alert('Escreva a descrição de seu pedido para prosseguir')
+    else if(descricao == ''){
+        alert('Escreva a descrição de seu pedido para prosseguir');
     }
-    else if(busto<=0){
-        window.alert('Insira um valor de busto valido para prosseguir')
+    else if(busto <= 0){
+        alert('Insira um valor de busto válido para prosseguir');
     }
-    else if(cintura<=0){
-        window.alert('Insira um valor de cintura valido para prosseguir')
+    else if(cintura <= 0){
+        alert('Insira um valor de cintura válido para prosseguir');
     }
-    else if(quadril<=0){
-        window.alert('Insira um valor de quadril valido para prosseguir')
+    else if(quadril <= 0){
+        alert('Insira um valor de quadril válido para prosseguir');
     }
-    else if(comprimentoPerna<=0){
-        window.alert('Insira um valor de comprimento de perna valido para prosseguir')
+    else if(comprimentoPerna <= 0){
+        alert('Insira um valor de comprimento de perna válido para prosseguir');
     }
-    else if(comprimentoBraco<=0){
-        window.alert('Insira um valor de comprimento de braço valido para prosseguir')
+    else if(comprimentoBraco <= 0){
+        alert('Insira um valor de comprimento de braço válido para prosseguir');
     }
-    else if(altura<=0){
-        window.alert('Insira um valor de altura valido para prosseguir')
+    else if(altura <= 0){
+        alert('Insira um valor de altura válido para prosseguir');
     }
     else{
         let text= encodeURIComponent(`-->  NOVA SOLICITAÇÃO!!  <--
@@ -161,7 +161,7 @@ input.addEventListener('click',()=>{
 })
 
 document.addEventListener('click',e=>{
-    if(!ul.contains(e.target) && e.target!==input){
+    if(!ul.contains(e.target) && e.target !== input){
         ul.classList.add('hide') 
     }
 })
