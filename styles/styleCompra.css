@@ -1,21 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
-
-
-h1{
-    font-family: "Amatic SC", sans-serif;
+body {
+    background-color: #F4E4D5;
 }
-
 h2{
-    font-family: "Amatic SC", sans-serif;
     font-size: 2.5em;
 }
 
 h3{
-    font-family: "Amatic SC", sans-serif;
     font-size: 1.4em;
 }
 
@@ -26,59 +22,55 @@ h5{
 
 header{
     width: 100%;
-    height: 13vh;
-    position: absolute;
+    height: 82px;
+    position: relative;
     background: #E9B8B1;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding-right:2%;
-    font-weight: bold;
+    font-weight: 300;
 }
-
 ::-webkit-scrollbar-track {
-    background-color: rgb(244, 244, 244);
+    background-color: #f4f4f4;
 }
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 12px;
     background: #F4F4F4;
 }
 ::-webkit-scrollbar-thumb {
-    background: #919090;
+    background: #343434;
     border-radius: 20px;
     box-shadow: 2px 2px 3px #474747;
 
 }
 
-input{
-    font-family: "Amatic SC", sans-serif;
+#inputBusca {
     width: 100%;
     height: 50px;
     padding-left: 20px;
     font-size: 22px;
-    border-radius: 100px;
+    border-radius: 9999px;
     border: 1px solid #ddd;
+    background-color: #F4F4F4;
 }
 
 a{
     transition: 0.2s;
-    font-family: "Amatic SC", sans-serif;
     font-size: 30px;
-    color:#474747;
+    color:#343434;
     text-decoration: none;
-    margin:6%;
+    margin: 8px;
     /* font-weight: normal; */
 }
 
 a:hover{
-    font-size:2.6em;
+    font-size: 36px;
     text-decoration:underline;
     transition: 0.2s;
 }
 
 .buscar{
     display: flex;
-    font-family: "Amatic SC", sans-serif;
     margin-left: 1%;
     width: 70%;
     display: flex;
@@ -102,17 +94,16 @@ a:hover{
     position: absolute;
     z-index: 1;
     top: 50px;
-    
 }
 
 #listaProdutos li a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: #343434;
     font-size: 20px;
     border: 1px solid #ddd;
-    background: #f6f6f6;
+    background: #f4f4f4;
     border-radius: 12px;
     padding: 5px;
     margin-left: 100px;
@@ -121,19 +112,17 @@ a:hover{
 
 
 #listaProdutos li a:hover{
-    background: #eee;
+    background: #ddd;
     
 }
 
 
 
 .hed{
-    font-family: "Amatic SC", sans-serif;
     font-size: 2.5em;
     color:#474747;
     text-decoration: none;
     margin:8%;
- 
 }
 
 
@@ -149,7 +138,7 @@ main {
 .product-section {
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -163,7 +152,7 @@ main {
 .product-image img {
     max-width: 100%;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 5px;
 }
 
@@ -184,12 +173,12 @@ main {
 
 .product-details {
     flex: 1;
-    margin:  10px 50px;
+    margin:  10px 36px;
 }
 
 .product-details h2 {
-    font-family: 'Cursive';
-    color: #333;
+    color: #343434;
+    font-weight: 400;
 }
 
 .product-details p {
@@ -203,13 +192,15 @@ main {
     margin: 5px;
     padding: 10px 20px;
     background-color: #E9B8B1;
-    border: 1px solid #d8d3d3;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    color: #343434;
     cursor: pointer;
 }
 
 .size-buttons3.active{
     background-color: #BC8A83;
+    transition: 0.2s;
 }
 
 
@@ -220,36 +211,36 @@ main {
 }
 
 .price-info span {
-    font-size: 24px;
+    font-size: 36px;
     color: #e53935;
     margin-right: 20px;
 }
 
 .buy-button {
     padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
+    background-color: #B0AE99;
+    color: #343434;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin:3%;
+    transition: 0.2s;
 }
 .buy-button:hover{
-    background-color: #45a048;
+    background-color: #535353;
+    color: #f4f4f4;
+    transition: 0.2s;
 }
-.buy-button:active{
-    background-color: #378039;
-}
 
-
-
-.product-contact span {
+.product-contact {
+    display: flex;
+    align-items: center;
     font-size: 16px;
     color: #666;
 }
 
 .product-description, .size-chart {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -257,8 +248,7 @@ main {
 }
 
 .product-description h3, .size-chart h3 {
-    font-family: 'Cursive';
-    color: #333;
+    color: #343434;
 }
 
 .size-chart table {
@@ -276,10 +266,25 @@ main {
 .size-chart th {
     background-color: #f5f5f5;
 }
+.link-logo {
+    margin: 0px 2%;
+}
+.logo-home {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    transition: 200ms;
+}
 
+.logo-home:hover {
+    height: 46px;
+    transition: 200ms;
+}
+.icon-links {
+    font-size: 18px;
+}
 /* Responsividade */
 @media (max-width: 768px) {
-    
     
     .product-section {
         flex-direction: column;
@@ -308,28 +313,43 @@ main {
     .header-content .contact-info {
         margin-top: 10px;
     }
+
+    .product-description h3,
+    .size-chart h3,
+    .product-details h2,
+    .product-contact {
+        display: flex;
+        justify-content: center;
+        color: #343434;
+    }
+    
+}
+@media (max-width: 600px) {
+    .product-details {
+        margin: 10px auto;
+    }
+    .product-details p {
+        text-align: center;
+
+    }
+    .product-details h2 {
+        font-size: 1.4em;
+    }
     
 }
 
 
 #contacts{
-    width: 30%;
+    width: 33%;
     height: 100%;
     display:grid;
     grid-template-rows: 1fr 1fr;
 }
 
-#whatsappLogo,
-#instagramLogo {
-    height: 3.4vh;
-    margin-left: 2%;
-}
-
 #siteSections{
-    margin-left: 1%;
-    margin-right: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     width: 80%;
 }
 

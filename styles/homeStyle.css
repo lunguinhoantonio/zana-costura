@@ -53,15 +53,11 @@ header{
     border: 1px solid #ddd;
     background-color: #f4f4f4;
 }
-
-::-webkit-scrollbar {
-  width: 12px;
-}
 ::-webkit-scrollbar-track {
     background-color: #f4f4f4;
 }
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 12px;
     background: #F4F4F4;
 }
 ::-webkit-scrollbar-thumb {
@@ -296,7 +292,7 @@ footer {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: #343434;
     font-size: 20px;
     border: 1px solid #ddd;
     background: #f4f4f4;
@@ -338,7 +334,7 @@ footer {
 }
 
 #contacts {
-    width: 32%;
+    width: 33%;
     height: 100%;
     display:grid;
     grid-template-rows: 1fr 1fr;
@@ -348,10 +344,4 @@ footer {
     font-size: 1em;
     margin: 0;
     color: #f4f4f4;
-}
-
-#whatsappLogo,
-#instagramLogo {
-    height: 3.4vh;
-    margin-right: 5%;
 }
