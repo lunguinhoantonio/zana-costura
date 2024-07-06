@@ -31,7 +31,7 @@ header{
     height: 82px;
     position: relative;
     background: #E9B8B1;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
@@ -42,9 +42,9 @@ header{
     height: 50px;
     padding-left: 20px;
     font-size: 22px;
-    border-radius: 100px;
-    background-color: #f4f4f4;
+    border-radius: 9999px;
     border: 1px solid #ddd;
+    background-color: #f4f4f4;
 }
 
 ::-webkit-scrollbar-track {
@@ -61,7 +61,6 @@ header{
 
 }
 
-
 p{
     margin-left: 5%;
 }
@@ -69,7 +68,7 @@ p{
 a {
     transition: 0.2s;
     font-size: 30px;
-    color:#343434;
+    color: #343434;
     text-decoration: none;
     margin: 8px;
     /* font-weight: normal; */
@@ -229,6 +228,20 @@ footer{
 }
 .icon-links {
     font-size: 24px;
+}
+.link-logo {
+    margin: 0px 2%;
+}
+.logo-home {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    transition: 200ms;
+}
+
+.logo-home:hover {
+    height: 46px;
+    transition: 200ms;
 }
 
 #listaProdutos{
