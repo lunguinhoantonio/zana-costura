@@ -15,6 +15,7 @@ html {
 }
 h2{
     font-size: 2.5em;
+    font-weight: 200;
     color: #343434;
 }
 
@@ -37,7 +38,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 #inputBusca {
@@ -270,7 +271,7 @@ footer {
 .article-personalizado {
     font-size: 24px;
     color: #343434;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 #listaProdutos {
