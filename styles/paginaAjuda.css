@@ -41,6 +41,7 @@ header {
     font-size: 22px;
     border-radius: 9999px;
     border: 1px solid #ddd;
+    background-color: #F4F4F4;
 }
 
 ::-webkit-scrollbar-track {
