@@ -107,14 +107,14 @@ li{
 footer{
     padding: 24px 24px;
     margin-top: 72px;
-    color:#f4f4f4;
+    color: #f4f4f4;
     background-color: #B0AE99;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .hide{
-    display:none;
+    display: none;
 }
 
 .displayFlex{
@@ -124,7 +124,7 @@ footer{
 }
 
 .underlined{
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .displayGrid{
@@ -135,10 +135,10 @@ footer{
 .prod{
     transition: 0.25s;
     margin-top: 64px;
-    height:46.7vh;
-    width:27.3vw;
+    height: 46.7vh;
+    width: 27.3vw;
     border-radius: 16px;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .prod:hover{
@@ -156,7 +156,7 @@ footer{
     justify-content: center;
 }
 .prodRight{
-    display:grid;
+    display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -169,7 +169,7 @@ footer{
 }
 
 .column{
-    display:grid;
+    display: grid;
     justify-content: center;
 }
 
@@ -180,7 +180,7 @@ footer{
     border-radius: 20px;
     font-size: 1.6em;
     margin-top: 5%;
-    padding: 5%;
+    padding: 12px;
     cursor: pointer;
     box-shadow: 1px 1px 2px #343434;
     margin-right: 50%;
@@ -244,6 +244,24 @@ footer{
     height: 46px;
     transition: 200ms;
 }
+.container-roupa-personalizada {
+    display: flex;
+    justify-content: center;
+}
+.button-personalizado {
+    transition: 0.3s;
+    background-color: #E9B8B1;
+    height: 10vh;
+    border-radius: 20px;
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 12px;
+    box-shadow: 1px 1px 2px #343434;
+}
+.button-personalizado:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+}
 
 #listaProdutos{
     display: none;
@@ -281,6 +299,9 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
+}
+#roupa-personalizada {
+    display: flex;
 }
 
 #goBack{
