@@ -140,7 +140,7 @@ footer {
 }
 
 .prod {
-    transition: 0.25s;
+    transition: 0.2s;
     margin-top: 64px;
     height: 46.7vh;
     width: 27.3vw;
@@ -149,7 +149,7 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 .prod:hover {
-    transition: 0.5s;
+    transition: 0.2s;
     background:#F4E4D5;
     height:47vh;
     width:27.6vw;
@@ -181,7 +181,7 @@ footer {
 }
 
 .buyButton {
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: #E9B8B1;
     height: 10vh;
     border-radius: 20px;
@@ -197,7 +197,7 @@ footer {
 
 .buyButton:hover {
     transform: scale(1.15);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .prodDescription {
@@ -257,7 +257,7 @@ footer {
     justify-content: center;
 }
 .button-personalizado {
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: #E9B8B1;
     height: 10vh;
     border-radius: 20px;
@@ -269,7 +269,7 @@ footer {
 }
 .button-personalizado:hover {
     transform: scale(1.15);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .article-personalizado {
     font-size: 24px;
@@ -324,14 +324,14 @@ footer {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     animation: pulse 1s infinite;
-    transition: background 250ms;
+    transition: background 200ms;
     backdrop-filter: blur(16px);
 }
 #goBack:hover {
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     border: 2px solid #F4F4F4;
-    transition: 250ms;
+    transition: 200ms;
 }
 
 #contacts {
