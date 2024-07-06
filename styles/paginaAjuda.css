@@ -28,7 +28,7 @@ h5{
 
 header {
     width: 100%;
-    height: 82px;
+    height: 150px;
     position: relative;
     background: #E9B8B1;
     display: flex;
@@ -93,12 +93,12 @@ a:hover {
 .logo-home {
     display: flex;
     align-items: center;
-    height: 38px;
+    height: 100px;
     transition: 200ms;
 }
 
 .logo-home:hover {
-    height: 46px;
+    height: 120px;
     transition: 200ms;
 }
 
