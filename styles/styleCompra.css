@@ -33,13 +33,14 @@ header{
     justify-content: space-between;
     font-weight: 300;
 }
+
 footer {
-    padding: 24px 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
     margin-top: 72px;
     color: #f4f4f4;
     background-color: #B0AE99;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 ::-webkit-scrollbar-track {
     background-color: #f4f4f4;
@@ -302,7 +303,6 @@ main {
 .displayFlex {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
 }
 .nav-links a {
     all: unset;
@@ -354,6 +354,9 @@ main {
         justify-content: center;
         color: #343434;
     }
+    footer {
+        flex-wrap: wrap;
+    }
     
 }
 @media (max-width: 600px) {
@@ -397,8 +400,6 @@ main {
 #contacts {
     width: 33%;
     height: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
 }
 
 #contacts a {
