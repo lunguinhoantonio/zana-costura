@@ -223,7 +223,7 @@ nav h2 {
 #input-descricaoPedido,
 #input-infoAdd::placeholder {
     font-weight: 400;
-    padding:0.4%;
+    padding: 4px 16px;
 }
 
 main button {
@@ -367,9 +367,12 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     .wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    footer {
+        flex-wrap: wrap;
     }
 }
