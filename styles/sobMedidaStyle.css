@@ -210,12 +210,6 @@ nav h2 {
     align-items: center;
 }
 
-#input-descricaoPedido {
-    padding: 0px 0px 10%;
-}
-#input-infoAdd {
-    padding: 0px 0px 10%;
-}
 #input-nomeCompleto,
 #input-telefone,
 #input-email,
