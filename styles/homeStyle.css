@@ -66,7 +66,7 @@ p{
     margin-left: 5%;
 }
 
-a{
+a {
     transition: 0.2s;
     font-size: 30px;
     color:#343434;
@@ -91,6 +91,7 @@ article{
 }
 nav{
     font-size: 1em;
+    padding-left: 24px;
 }
 
 main {
@@ -120,6 +121,7 @@ footer{
 .displayFlex{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .underlined{
@@ -218,6 +220,16 @@ footer{
 .item-name{
     margin-left: 15px;
 }
+.nav-links a{
+    all: unset;
+    cursor: pointer;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.icon-links {
+    font-size: 24px;
+}
 
 #listaProdutos{
     display: none;
@@ -258,12 +270,15 @@ footer{
 }
 
 #goBack{
-    height:16vh;
-    transition: 250ms;
+    height: 90px;
+    padding: 16px;
+    border-radius: 50%;
+    transition: background 250ms;
 }
 #goBack:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
     transition: 250ms;
-    height: 18vh;
 }
 
 #contacts{
