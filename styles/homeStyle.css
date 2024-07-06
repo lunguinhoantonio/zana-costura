@@ -64,7 +64,7 @@ header{
 
 }
 
-p{
+p {
     margin-left: 5%;
 }
 
@@ -77,7 +77,7 @@ a {
     /* font-weight: normal; */
 }
 
-a:hover{
+a:hover {
     font-size:36px;
     text-decoration:underline;
     transition: 0.2s;
@@ -88,10 +88,10 @@ a:hover{
     color:blue;
 } */
 
-article{
+article {
     font-size: 1em;
 }
-nav{
+nav {
     font-size: 1em;
     padding-left: 24px;
 }
@@ -103,11 +103,11 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-li{
+li {
     font-size: 16px;
 }
 
-footer{
+footer {
     padding: 24px 24px;
     margin-top: 72px;
     color: #f4f4f4;
@@ -116,26 +116,26 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.displayFlex{
+.displayFlex {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.underlined{
+.underlined {
     text-decoration: underline;
 }
 
-.displayGrid{
+.displayGrid {
     display: grid;
     align-items: center;
 }
 
-.prod{
+.prod {
     transition: 0.25s;
     margin-top: 64px;
     height: 46.7vh;
@@ -144,7 +144,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.prod:hover{
+.prod:hover {
     transition: 0.5s;
     background:#F4E4D5;
     height:47vh;
@@ -153,30 +153,30 @@ footer{
     box-shadow: 2px 2px 3px #343434;
 }
 
-.prodLeft{
+.prodLeft {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.prodRight{
+.prodRight {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
 
-.prodImg{
+.prodImg {
     margin-left: 5%;
     height: 90%;
     width: 90%;
     border-radius: 15px;
 }
 
-.column{
+.column {
     display: grid;
     justify-content: center;
 }
 
-.buyButton{
+.buyButton {
     transition: 0.3s;
     background-color: #E9B8B1;
     height: 10vh;
@@ -191,25 +191,25 @@ footer{
     margin-left: 20%;
 }
 
-.buyButton:hover{
+.buyButton:hover {
     transform: scale(1.15);
     transition: 0.3s;
 }
 
-.prodDescription{
+.prodDescription {
     display: grid;
     align-items: center;
     justify-content: center;
     margin-left: 10%;
 }
 
-.prodRightDown{
+.prodRightDown {
     display:flex;
     align-items:center;
     justify-content: center;
 }
 
-.buscar{
+.buscar {
     display: flex;
     margin-left: 1%;
     width: 70%;
@@ -221,10 +221,10 @@ footer{
     margin-right: 15%;
 }
 
-.item-name{
+.item-name {
     margin-left: 15px;
 }
-.nav-links a{
+.nav-links a {
     all: unset;
     cursor: pointer;
 }
@@ -273,7 +273,7 @@ footer{
     font-weight: 600;
 }
 
-#listaProdutos{
+#listaProdutos {
     display: none;
     width: 100%;
     list-style-type: none;
@@ -285,7 +285,7 @@ footer{
     
 }
 
-#listaProdutos li a{
+#listaProdutos li a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -299,12 +299,12 @@ footer{
     margin: 0;
 }
 
-#listaProdutos li a:hover{
+#listaProdutos li a:hover {
     background: #ddd;
     
 }
 
-#siteSections{
+#siteSections {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -314,7 +314,7 @@ footer{
     display: flex;
 }
 
-#goBack{
+#goBack {
     height: 90px;
     padding: 16px;
     border-radius: 50%;
@@ -322,27 +322,27 @@ footer{
     animation: pulse 1s infinite;
     transition: background 250ms;
 }
-#goBack:hover{
+#goBack:hover {
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: 250ms;
 }
 
-#contacts{
+#contacts {
     width: 32%;
     height: 100%;
     display:grid;
     grid-template-rows: 1fr 1fr;
 }
 
-#contacts a{
+#contacts a {
     font-size: 1em;
     margin:0;
     color: #f4f4f4;
 }
 
 #whatsappLogo,
-#instagramLogo{
+#instagramLogo {
     height: 3.4vh;
     margin-right: 5%;
 }
