@@ -262,6 +262,9 @@ footer{
     transform: scale(1.15);
     transition: 0.3s;
 }
+.article-personalizado {
+    font-size: 24px;
+}
 
 #listaProdutos{
     display: none;
