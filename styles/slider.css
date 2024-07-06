@@ -9,17 +9,15 @@ section.slider{
     margin-top: 50px;    
 }
 .slider-content{
-    
     width: 400%;
     height: auto;
     display: flex;
-    
 }
 .slider-content input{
     display: none;
 }
 .slide-box{
-    background: bisque;
+    background-color: #F4E4D5;
     width: 25%;
     height: auto;
     position: relative;
@@ -47,7 +45,7 @@ section.slider{
 }
 
 .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .nav-manual .manual-btn:hover{
@@ -72,7 +70,7 @@ section.slider{
 
 a{
     text-decoration: none;
-    color: black;
+    color: #343434;
 }
 /* .img-desktop{
 
