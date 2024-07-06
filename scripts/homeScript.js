@@ -136,7 +136,7 @@ function filtrar() {
             span = li[i].querySelector(".item-name");
             if(span){
                 AnimationPlaybackEvent.innerHTML = txtValue.replace(new RegExp(filter, "gi"),(match)=>{
-                    return "<strong>" + match + "<strong>";
+                    return "<b>" + match + "<b>";
                 })
             }
         }else{
@@ -144,7 +144,7 @@ function filtrar() {
         }
     }
 
-    if (count === 0){
+    if (filter === ""){
         ul.style.display = "none";
     } else {
         ul.style.display = "block";
@@ -156,6 +156,7 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+var input = getElementById('#inputBusca');
 input.addEventListener('click',()=>{
     ul.classList.toggle('hide')
 })

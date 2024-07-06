@@ -13,7 +13,7 @@
     <script src="scripts/homeScript.js"></script>
 </head>
 <body>
-<header>
+    <header>
         <a class="link-logo" href="index.html"><img class="logo-home" src="./logo/logo-zana-costuras.png"></a>
         <section id="siteSections">
             <a href="index.html">Home</a>
@@ -63,7 +63,6 @@
         </section>
         <script src="filtrar.js"></script>
     </section>  
-
     </header>
     <main>
         <section class="product-section">
@@ -214,10 +213,29 @@
             <h4>Zana Costuras&copy</h4>
             <time>29/06/2024</time>
         </section>
+        <div class="utils">
+            <button id="scrollToTop">
+                <img src="./images/scrollTop.svg" alt="Botão descer">
+            </button>
+        </div>
         <aside class="displayFlex">
             <img src="logo/seta-cima.png" alt="seta pra cima logo" onclick="scrollToTop()" id="goBack">
         </aside>
     </footer>
+    <script>
+        const footer = document.querySelector('footer');
+        const button = document.getElementById('scrollToTop');
+        window.onscroll = (ev) => {
+          if (document.documentElement.scrollTop > footer.getBoundingClientRect().y) {
+            button.style.display = 'block';
+            button.style.animation = 'fadeIn';
+            button.style.animationDuration = '1s';
+          } else button.style.display = 'none';
+        };
+        button.addEventListener('click', () => {
+          document.documentElement.scrollTop = 100;
+        });
+      </script>
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
