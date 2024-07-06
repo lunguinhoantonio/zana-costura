@@ -165,22 +165,28 @@ main {
 .product-image img {
     max-width: 100%;
     border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 5px;
+    border-radius: 8px;
+    padding: 6px;
 }
 
 .thumbnail-gallery {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 12px;
+    margin-top: 12px;
 }
 
 .thumbnail {
     width: 60px;
     height: 60px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    padding: 2px;
+    transition: 0.2s;
+}
+.thumbnail:hover {
+    border: 1px solid #343434;
+    transition: 0.2s;
 }
 
 
