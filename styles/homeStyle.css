@@ -1,25 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    border:0;
-    padding:0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-
-
-h1{
-    font-family: "Amatic SC", sans-serif;
+body {
+    background-color: #f4f4f4;
 }
-
 h2{
-    font-family: "Amatic SC", sans-serif;
     font-size: 2.5em;
 }
 
 h3{
-    font-family: "Amatic SC", sans-serif;
     font-size: 1.4em;
 }
 
@@ -30,23 +25,22 @@ h5{
 
 header{
     width: 100%;
-    height: 13vh;
+    height: 82px;
     position: relative;
     background: #E9B8B1;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding-right:2%;
     font-weight: bold;
 }
 
-input{
-    font-family: "Amatic SC", sans-serif;
+#inputBusca {
     width: 100%;
     height: 50px;
     padding-left: 20px;
     font-size: 22px;
     border-radius: 100px;
+    background-color: #f4f4f4;
     border: 1px solid #ddd;
 }
 
@@ -71,16 +65,15 @@ p{
 
 a{
     transition: 0.2s;
-    font-family: "Amatic SC", sans-serif;
     font-size: 30px;
-    color:#474747;
+    color:#343434;
     text-decoration: none;
-    margin:6%;
+    margin: 8px;
     /* font-weight: normal; */
 }
 
 a:hover{
-    font-size:2.6em;
+    font-size:36px;
     text-decoration:underline;
     transition: 0.2s;
 }
@@ -92,33 +85,28 @@ a:hover{
 
 article{
     font-size: 1em;
-    font-family: "Comfortaa", sans-serif;
 }
 nav{
     font-size: 1em;
-    font-family: "Comfortaa", sans-serif;
 }
 
-main{
+main {
     align-items: center;
     justify-content: center;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 li{
-    font-family: "Amatic SC", sans-serif;
     font-size: 16px;
 }
 
 footer{
-    font-family: "Amatic SC", sans-serif;
-    padding-top: 50px;
-    margin-top: 20%;
-    color:#fdfdfd;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 24px 24px;
+    margin-top: 72px;
+    color:#f4f4f4;
+    background-color: #B0AE99;
     display: grid;
-    padding-bottom: 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -144,7 +132,7 @@ footer{
     transition: 0.5s;
     height:46.7vh;
     width:27.3vw;
-    border-radius: 20px;
+    border-radius: 16px;
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -154,11 +142,11 @@ footer{
     height:47vh;
     width:27.6vw;
     border:2px solid #E9B8B1;
-    box-shadow: 2px 2px 3px #474747;
+    box-shadow: 2px 2px 3px #343434;
 }
 
 .prodLeft{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -169,8 +157,8 @@ footer{
 
 
 .prodImg{
-    margin-left:5%;
-    height:90%;
+    margin-left: 5%;
+    height: 90%;
     width: 90%;
     border-radius: 15px;
 }
@@ -183,22 +171,20 @@ footer{
 .buyButton{
     transition: 0.3s;
     background-color: #E9B8B1;
-    height:10vh;
+    height: 10vh;
     border-radius: 20px;
-    font-family: "Amatic SC", sans-serif;
     font-size: 1.6em;
     margin-top: 5%;
     padding: 5%;
     cursor: pointer;
-    box-shadow: 1px 1px 2px #7A7A7A;
+    box-shadow: 1px 1px 2px #343434;
     margin-right: 50%;
     margin-left: 20%;
 }
 
 .buyButton:hover{
+    transform: scale(1.15);
     transition: 0.3s;
-    padding: 7%;
-    font-size: 1.8em;
 }
 
 .prodDescription{
@@ -216,7 +202,6 @@ footer{
 
 .buscar{
     display: flex;
-    font-family: "Amatic SC", sans-serif;
     margin-left: 1%;
     width: 70%;
     display: flex;
@@ -257,22 +242,15 @@ footer{
     margin: 0;
 }
 
-
 #listaProdutos li a:hover{
     background: #eee;
     
 }
 
-
-
-
-
-
 #siteSections{
-    margin-left: 1%;
-    margin-right: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     width: 80%;
 }
 
@@ -296,11 +274,10 @@ footer{
     font-size: 1em;
     margin:0;
     color:white;
-
 }
 
 #whatsappLogo,
 #instagramLogo{
-    height:3.4vh;
+    height: 3.4vh;
     margin-right: 5%;
 }
