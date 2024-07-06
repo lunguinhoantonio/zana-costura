@@ -30,6 +30,14 @@ header{
     justify-content: space-between;
     font-weight: 300;
 }
+footer {
+    padding: 24px 24px;
+    margin-top: 72px;
+    color: #f4f4f4;
+    background-color: #B0AE99;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 ::-webkit-scrollbar-track {
     background-color: #f4f4f4;
 }
@@ -141,6 +149,7 @@ main {
     background-color: #f6f6f6;
     padding: 20px;
     border-radius: 10px;
+    margin-top: 72px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -193,9 +202,10 @@ main {
     padding: 10px 20px;
     background-color: #E9B8B1;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #343434;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .size-buttons3.active{
@@ -221,14 +231,17 @@ main {
     background-color: #B0AE99;
     color: #343434;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     margin:3%;
     transition: 0.2s;
 }
 .buy-button:hover{
-    background-color: #535353;
-    color: #f4f4f4;
+    background-color: #F4E4D5;
+    transition: 0.2s;
+}
+.size-buttons button:hover {
+    background-color: #F4E4D5;
     transition: 0.2s;
 }
 
@@ -283,6 +296,22 @@ main {
 .icon-links {
     font-size: 18px;
 }
+.displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-links a {
+    all: unset;
+    cursor: pointer;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+.icon-links {
+    font-size: 24px;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     
@@ -338,14 +367,6 @@ main {
     
 }
 
-
-#contacts{
-    width: 33%;
-    height: 100%;
-    display:grid;
-    grid-template-rows: 1fr 1fr;
-}
-
 #siteSections{
     display: flex;
     align-items: center;
@@ -353,6 +374,35 @@ main {
     width: 80%;
 }
 
+#goBack {
+    height: 90px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    animation: pulse 1s infinite;
+    transition: background 200ms;
+    backdrop-filter: blur(16px);
+}
+
+#goBack:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border: 2px solid #F4F4F4;
+    transition: 200ms;
+}
+
+#contacts {
+    width: 33%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#contacts a {
+    font-size: 1em;
+    margin: 0;
+    color: #f4f4f4;
+}
 
 #estiloCampestre{
     /* elemento dispresivel
