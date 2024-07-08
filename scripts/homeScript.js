@@ -8,10 +8,10 @@ function send(id){
         alert('Selecione um tamanho de roupa');
     }
     else{
-        let title= document.getElementById(id).textContent;
-        let size=chosenSize;
-        let url=window.location.href;
-        let text= encodeURIComponent(`-->  NOVA SOLICITAÇÃO!!  <--
+        let title = document.getElementById(id).textContent;
+        let size = chosenSize;
+        let url = window.location.href;
+        let text = encodeURIComponent(`-->  NOVA SOLICITAÇÃO!!  <--
                  Link da roupa: ${url}
         
                  Produto: ${title}
@@ -19,30 +19,30 @@ function send(id){
                  Tamanho: ${size}
         
                  Obrigado(a)`);
-        location.href=('https://wa.me/5571988090920?text=' + text);
+        location.href = ('https://wa.me/5571988090920?text=' + text);
     }
  
 }
 
 function sendSobMedida(){
-    let userName=document.getElementById('input-nomeCompleto').value;
-    let userEmail=document.getElementById('input-email').value;
-    let userAdress=document.getElementById('input-endereco').value;
-    let typeOfServise=document.getElementById('input-tiposServico').value;
-    let typeOfClothe=document.getElementById('input-tiposRoupas').value;
-    let descricao=document.getElementById('input-descricaoPedido').value;
-    let busto=document.getElementById('input-busto').value;
-    let cintura=document.getElementById('input-cintura').value;
-    let quadril=document.getElementById('input-quadril').value;
-    let comprimentoPerna=document.getElementById('input-comprimentoPerna').value;
-    let comprimentoBraco=document.getElementById('input-comprimentoBraco').value;
-    let altura=document.getElementById('input-altura').value;
-    let boleanOrcamento=document.getElementById('input-checkboxOrcamento');
-    let observacao=document.getElementById('input-infoAdd').value;
+    let userName = document.getElementById('input-nomeCompleto').value;
+    let userEmail = document.getElementById('input-email').value;
+    let userAdress = document.getElementById('input-endereco').value;
+    let typeOfServise = document.getElementById('input-tiposServico').value;
+    let typeOfClothe = document.getElementById('input-tiposRoupas').value;
+    let descricao = document.getElementById('input-descricaoPedido').value;
+    let busto = document.getElementById('input-busto').value;
+    let cintura = document.getElementById('input-cintura').value;
+    let quadril = document.getElementById('input-quadril').value;
+    let comprimentoPerna = document.getElementById('input-comprimentoPerna').value;
+    let comprimentoBraco = document.getElementById('input-comprimentoBraco').value;
+    let altura = document.getElementById('input-altura').value;
+    let boleanOrcamento = document.getElementById('input-checkboxOrcamento');
+    let observacao = document.getElementById('input-infoAdd').value;
     let condRequisicaoOrcamento = '';
 
     if(boleanOrcamento.checked){
-        condRequisicaoOrcamento='Gostaria de solicitar um orçamento';
+        condRequisicaoOrcamento = 'Gostaria de solicitar um orçamento';
     }
     else{
         condRequisicaoOrcamento = '';
@@ -76,13 +76,13 @@ function sendSobMedida(){
         alert('Insira um valor de altura válido para prosseguir');
     }
     else{
-        let text= encodeURIComponent(`-->  NOVA SOLICITAÇÃO!!  <--
+        let text = encodeURIComponent(`-->  NOVA SOLICITAÇÃO!!  <--
             Roupa sob Medida
                     Meu nome: ${userName}
                     Meu email: ${userEmail}
                     Meu endereço: ${userAdress}
     
-                    Tipo de serciço: ${typeOfServise}
+                    Tipo de serviço: ${typeOfServise}
                     Tipo de roupa: ${typeOfClothe}
     
                     Descrição do pedido: ${descricao}
@@ -101,7 +101,7 @@ function sendSobMedida(){
     
     
                     Obrigado(a)`);
-        location.href=('https://wa.me/5571988090920?text='+text)
+        location.href=('https://wa.me/5571988090920?text=' + text);
     }
     }
 
@@ -114,7 +114,7 @@ function filtrar() {
     i,
     span,
     txtValue,
-    count = 0
+    count = 0;
     input = document.getElementById('inputBusca');
     ul = document.getElementById('listaProdutos');
 
@@ -131,7 +131,7 @@ function filtrar() {
         if(txtValue.toUpperCase().indexOf(filter) > -1){
             li[i].style.display = "";
 
-            count++
+            count++;
 
             span = li[i].querySelector(".item-name");
             if(span){
@@ -155,12 +155,6 @@ function filtrar() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
-// var input = document.getElementById('inputBusca');
-// var input = 0;
-// input.addEventListener('click',()=>{
-//     ul.classList.toggle('hide')
-// })
 
 document.addEventListener('click',e=>{
     if(!ul.contains(e.target) && e.target !== input){
