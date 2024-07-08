@@ -200,6 +200,10 @@ img {
     justify-content: space-evenly;
     width: 80%;
 }
+.nav-links > ul > li > ul {
+    padding: 0;
+    margin-bottom: 8px;
+}
 
 /* MEDIA QUERIES */
 
