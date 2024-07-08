@@ -202,7 +202,7 @@ img {
 }
 .nav-links > ul > li > ul {
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 /* MEDIA QUERIES */
