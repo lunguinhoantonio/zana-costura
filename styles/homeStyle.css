@@ -112,12 +112,6 @@ li {
 }
 
 footer {
-    /* padding: 24px 24px;
-    margin-top: 72px;
-    color: #f4f4f4;
-    background-color: #B0AE99;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; */
     display: flex;
     justify-content: space-between;
     padding: 24px;
@@ -337,10 +331,11 @@ footer {
 }
 
 #contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     width: 33%;
     height: 100%;
-    display:grid;
-    grid-template-rows: 1fr 1fr;
 }
 
 #contacts a {
