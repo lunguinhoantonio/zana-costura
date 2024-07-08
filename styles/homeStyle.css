@@ -183,11 +183,10 @@ footer {
 .buyButton {
     transition: 0.2s;
     background-color: #E9B8B1;
-    height: 10vh;
     border-radius: 20px;
     font-size: 1.6em;
     margin-top: 5%;
-    padding: 12px;
+    padding: 16px;
     cursor: pointer;
     box-shadow: 1px 1px 2px #343434;
     color: #343434;
