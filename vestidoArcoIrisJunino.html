@@ -4,69 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#E9B8B1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Vestido Arco-Íris junino</title>
-    <link rel="stylesheet" href="styles/styleCompra.css">
-    <link rel="icon" href="logo/zana costuras Logo.png">
-    <script src="scripts/scriptCompra.js"></script>
-    <script src="scripts/homeScript.js"></script>
+    <link rel="stylesheet" href="./styles/styleCompra.css">
+    <link rel="icon" href="./logo/zana costuras Logo.png">
+    <script src="./scripts/scriptCompra.js"></script>
+    <script src="./scripts/homeScript.js"></script>
 </head>
 <body>
-<header>
-        <a href="index.html"><img  src="./logo/logo-zana-costuras.png" style="height:6vh;"></a>
+    <header>
+        <a class="link-logo" href="index.html"><img class="logo-home" src="./logo/logo-zana-costuras.png"></a>
         <section id="siteSections">
             <a href="index.html">Home</a>
             <a href="ajuda.html">Ajuda</a>
         </section>
         <section class="buscar">
             <input id="inputBusca" onkeyup="filtrar()" type="text" placeholder="O que você procura?">
-            <ul id="listaProdutos" onblur="">
-                <li>
-                    <a href="vestidoGalinhaPintadinha.html">
-                        <img width="45" height="" src="image/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="vestido junino">
-                        <span class="item-name">Vestido Galinha Pintadinha</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="estiloCampestre.html">
-                        <img width="45" height="" src="image/903f4a95-204a-4494-b300-abe252848ee0-removebg-preview.png" alt="vestido junino">
-                        <span class="item-name">Vestido de estilo Campestre</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="vestidoPrimavera.html">
-                        <img width="45" height="" src="roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="vestido junino">
-                        <span class="item-name">Vestido Primavera</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="vestidoFestaJuninaVermelho.html">
-                        <img width="45" height="" src="image/b2e9d8d0-f50f-485c-9744-73eab95ca585-removebg-preview.png" alt="vestido junino">
-                        <span class="item-name">Vestido festa junina quadriculado vermelho</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="vestidoViolet.html">
-                        <img width="45" height="" src="image/vestido roxo.png" alt="vestido junino">
-                        <span class="item-name">Vestido violet com laço</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="vestidoArcoIrisJunino.html">
-                        <img width="45" height="" src="roupas/a01e793a-679e-4a99-8bca-3b987e371a06-removebg-preview.png" alt="vestido junino">
-                        <span class="item-name">Vestido Arco-Íris junino</span>
-                    </a>
-                </li>
-                
-            </ul>
-        </section>
-    
-        <script src="filtrar.js"></script>
-    </section>  
-
+                <ul id="listaProdutos" onblur="">
+                    <li>
+                        <a href="vestidoGalinhaPintadinha.html">
+                            <img width="45" height="" src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="vestido estilo galinha pintadinha azul com pontos brancos e um laço vermelho no meio do vestido">
+                            <span class="item-name">Vestido Galinha Pintadinha</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estiloCampestre.html">
+                            <img width="45" height="" src="./roupas/903f4a95-204a-4494-b300-abe252848ee0-removebg-preview.png" alt="vestido de estilo campestre">
+                            <span class="item-name">Vestido de estilo Campestre</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoPrimavera.html">
+                            <img width="45" height="" src="./roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="vestido primavera">
+                            <span class="item-name">Vestido Primavera</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoFestaJuninaVermelho.html">
+                            <img width="45" height="" src="./roupas/b2e9d8d0-f50f-485c-9744-73eab95ca585-removebg-preview.png" alt="vestido junino quadriculado vermelho">
+                            <span class="item-name">Vestido festa junina quadriculado vermelho</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoViolet.html">
+                            <img width="45" height="" src="./roupas/8a34e79b-9767-4888-a299-615493f4f937-removebg-preview.png" alt="vestido violeta com laço da mesma cor">
+                            <span class="item-name">Vestido violeta com laço</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoArcoIrisJunino.html">
+                            <img width="45" height="" src="./roupas/a01e793a-679e-4a99-8bca-3b987e371a06-removebg-preview.png" alt="vestido arco-íris junino">
+                            <span class="item-name">Vestido Arco-Íris junino</span>
+                        </a>
+                    </li>
+                </ul>
+            <script src="filtrar.js"></script>
+        </section>  
     </header>
-    <br>
-    <br>
-    <br><br><br>
     <main>
         <section class="product-section">
             <div class="product-image">
@@ -77,7 +71,7 @@
                 </div>
             </div>
             <div class="product-details">
-                <h2 style="font-family: Amatic SC", sans-serif;" id="vestidoArcoIrisJunino">Vestido Arco-Íris junino</h2>
+                <h2 id="vestidoArcoIrisJunino">Vestido Arco-Íris junino</h2>
                 <p>Tamanho da Roupa:</p>
 
                 <div class="size-buttons"> <!--Botao rosa-->
@@ -95,26 +89,25 @@
 
                 <div class="price-info">
                     <span>R$ 250,00</span>
-                    <button class="buy-button" id="btnPagamento" onclick="send('vestidoArcoIrisJunino')">Solicitar</button> <!--Botao verde solicitar-->
+                    <button class="buy-button" id="btnPagamento" onclick="send('vestidoArcoIrisJunino')">Solicitar</button> <!--Botao de cor #B0AE99 solicitar-->
                     <button class="buy-button" id="btnPagamento" onclick="location.href='sobMedida.html'">Solicitar Sob Medida</button>
 
 
                 </div>
                 <div class="product-contact">
-                    <span>(71)98809-0920</span>
+                    <ion-icon name="logo-whatsapp" class="icon-links" style="color: #666;"></ion-icon>
+                    <span>(71) 98809-0920</span>
                 </div>
             </div>
         </section>
 
         <section class="product-description">
             <h3>Descrição do Produto</h3>
-            <br>
             <p> Vestido acinturado com 3 camadas de saia godê, 100% algodão, projetado com diferentes padrões e cores. A camada superior da saia é laranja com bolinhas brancas, seguida por uma camada com estampa floral, e a camada inferior é xadrez rosa e branco. O corpete apresenta uma aplicação em formato de coração com tecido azul e branco xadrez. As mangas são bufantes, laranja com bolinhas na parte superior e azuis na bainha, laços de fitas coloridas em cetim acentuam a cintura, e há detalhes em renda azul ao longo das bordas do vestido</p>
         </section>
         
         <section class="size-chart">
             <h3>Tabela de Medidas</h3>
-            <br>
             <table>
                 <tr>
                     <th> </th><th>Busto</th><th>Cintura</th><th>Quadril</th><th>Idade</th><th>Altura</th>
@@ -161,10 +154,62 @@
                 <tr>
                     <td>14</td><td>77 - 80 cm</td><td>64 - 65 cm</td><td>85 - 88 cm</td><td>13 a 14 anos</td><td>154 a 159 cm</td>
                 </tr>
-                
             </table>
         </section>
     </main>
+    <footer>
+        <nav class="nav-links">
+            <ul>
+                <li><b><h5>Devs</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/Brendoliveira" target="_blank">Brendo</a></li>
+                        <li><a href="https://github.com/lunguinhoantonio" target="_blank">Antônio Marcos</a></li>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                        <li><a href="https://github.com/jpgp80" target="_blank">João Pedro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-links">
+            <ul>
+                <li><b><h5>Design</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><b><h5>Scrum Masters</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/jpgp80" target="_blank">João Pedro</a></li>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section id="contacts">
+            <h5>Contatos</h5>
+            <a href="https://wa.me/5571988090920" target="_blank">
+                <div class="displayFlex">
+                    <ion-icon name="logo-whatsapp" class="icon-links" style="color: #f4f4f4;"></ion-icon>
+                    <h4>(71) 98809-0920</h4>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/zana.costura/" target="_blank">
+                <div class="displayFlex">            
+                    <ion-icon name="logo-instagram" class="icon-links" style="color: #f4f4f4;"></ion-icon>
+                    <h4>@zana.costuras</h4>
+                </div>
+            </a>
+            <h4>Zana Costuras &copy</h4>
+            <time>08/07/2024</time>
+        </section>
+        <aside class="displayFlex">
+            <img src="logo/seta-cima.png" alt="seta pra cima logo" onclick="scrollToTop()" id="goBack">
+        </aside>
+    </footer>
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
