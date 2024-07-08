@@ -427,6 +427,9 @@ main {
     width: 33%;
     height: 100%;
 }
+#contacts h5 {
+    margin-bottom: 8px;
+}
 
 #contacts a {
     font-size: 1em;
