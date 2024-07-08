@@ -170,15 +170,13 @@ footer {
 }
 .prodRight {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
 }
-
 
 .prodImg {
     margin-left: 5%;
     height: 90%;
     width: 90%;
-    border-radius: 15px;
 }
 
 .column {
