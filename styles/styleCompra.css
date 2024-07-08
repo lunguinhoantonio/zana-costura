@@ -261,6 +261,10 @@ main {
     background-color: #F4E4D5;
     transition: 0.2s;
 }
+.size-buttons button:active {
+    background-color: #535353;
+    transition: 0.2s;
+}
 
 .product-contact {
     display: flex;
