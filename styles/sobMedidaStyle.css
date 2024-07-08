@@ -228,7 +228,7 @@ main button {
     cursor: pointer;
     border-radius: 8px;
     background-color: #E9B8B1;
-    transition: 350ms;
+    transition: 200ms;
     padding: 1% 5%;
     font-size: 150%;
     gap: 8px;
@@ -238,7 +238,7 @@ main button {
 }
 button:hover {
     background-color: #d6a299;
-    transition: 350ms;
+    transition: 200ms;
 }
 
 .social-links {
@@ -321,6 +321,10 @@ footer {
 .nav-links a:hover {
     text-decoration: underline;
 }
+.nav-links > ul > li > ul {
+    padding: 0;
+    margin-bottom: 16px;
+}
 .icon-links {
     font-size: 24px;
 }
@@ -329,6 +333,7 @@ footer {
     padding: 16px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #F4F4F4;
     animation: pulse 1s infinite;
     transition: background 200ms;
     backdrop-filter: blur(16px);
@@ -336,13 +341,18 @@ footer {
 #goBack:hover {
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    border: 2px solid #F4F4F4;
     transition: 200ms;
 }
 
 #contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     width: 33%;
     height: 100%;
+}
+#contacts h5 {
+    margin-bottom: 8px;
 }
 
 #contacts a {

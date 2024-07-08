@@ -135,25 +135,10 @@ a:hover{
     
 }
 
-
-
-.hed{
-    font-size: 2.5em;
-    color:#474747;
-    text-decoration: none;
-    margin:8%;
-}
-
-
 main {
     padding: 20px;
 }
 
-.hed:hover{
-    font-size:2.6em;
-    text-decoration:underline;
-    transition: 0.2s;
-}
 .product-section {
     display: flex;
     flex-wrap: wrap;
@@ -321,9 +306,6 @@ main {
     height: 120px;
     transition: 200ms;
 }
-.icon-links {
-    font-size: 18px;
-}
 .displayFlex {
     display: flex;
     align-items: center;
@@ -393,7 +375,6 @@ main {
     }
     .product-details p {
         text-align: center;
-
     }
     .product-details h2 {
         font-size: 1.4em;
