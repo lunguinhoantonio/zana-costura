@@ -42,6 +42,11 @@ header{
     justify-content: space-between;
     font-weight: 300;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
 
 #inputBusca {
     width: 100%;
