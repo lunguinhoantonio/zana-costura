@@ -21,6 +21,9 @@ h2{
 h3{
     font-size: 1.4em;
 }
+h4 {
+    font-weight: 300;
+}
 
 h5{
     font-size: 1em;
@@ -35,6 +38,15 @@ header {
     align-items: center;
     justify-content: space-between;
     font-weight: 300;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    margin-top: 36px;
+    color: #f4f4f4;
+    background-color: #B0AE99;
 }
 
 #inputBusca {
@@ -77,29 +89,15 @@ a:hover {
     text-decoration: underline;
     transition: 0.2s;
 }
-
-/* section{
-    color:blue;
-} */
+nav {
+    font-size: 1em;
+    padding-left: 24px;
+}
 
 .details-container {
     display: flex;
     flex-direction: column;
     background-color: #F4E4D5;
-}
-.link-logo {
-    margin: 0px 2%;
-}
-.logo-home {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    transition: 200ms;
-}
-
-.logo-home:hover {
-    height: 120px;
-    transition: 200ms;
 }
 
 .perguntas-frequentes-title {
@@ -200,9 +198,76 @@ img {
     justify-content: space-evenly;
     width: 80%;
 }
+
+#goBack {
+    height: 90px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #F4F4F4;
+    animation: pulse 1s infinite;
+    transition: background 200ms;
+    backdrop-filter: blur(16px);
+}
+#goBack:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 33%;
+    height: 100%;
+}
+
+#contacts h5 {
+    margin-bottom: 8px;
+}
+
+#contacts a {
+    font-size: 1em;
+    margin: 0;
+    color: #f4f4f4;
+}
+
+.displayFlex {
+    display: flex;
+    align-items: center;
+}
+
+.item-name {
+    margin-left: 15px;
+}
+.nav-links a {
+    all: unset;
+    cursor: pointer;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
 .nav-links > ul > li > ul {
     padding: 0;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+}
+.icon-links {
+    font-size: 24px;
+}
+.link-logo {
+    margin: 0px 2%;
+}
+.logo-home {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    transition: 200ms;
+}
+
+.logo-home:hover {
+    height: 120px;
+    transition: 200ms;
 }
 
 /* MEDIA QUERIES */
