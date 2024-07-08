@@ -204,7 +204,6 @@ footer {
     display: grid;
     align-items: center;
     justify-content: center;
-    margin: auto 5%;
 }
 
 .prodRightDown {
@@ -215,7 +214,6 @@ footer {
 
 .buscar {
     display: flex;
-    margin-left: 1%;
     width: 70%;
     display: flex;
     flex-flow: column;
@@ -271,6 +269,9 @@ footer {
     transition: 0.2s;
 }
 .article-personalizado {
+    display: flex;
+    justify-content: center;
+    margin: 0 7.5%;
     font-size: 24px;
     color: #343434;
     font-weight: 300;
