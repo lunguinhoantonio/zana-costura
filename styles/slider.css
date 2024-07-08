@@ -25,7 +25,7 @@ section.slider{
     transition: 0.5s;
 }
 .slide-box img{
-    width: 250px;
+    width: 200px;
     height: 300px;
     margin: 70px auto 7px;
 }
