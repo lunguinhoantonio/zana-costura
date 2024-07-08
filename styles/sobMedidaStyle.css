@@ -111,8 +111,11 @@ li{
     font-size: 16px;
 }
 
+nav {
+    padding-left: 24px;
+}
 
-nav h2 {
+.title h2 {
     display: flex;
     justify-content: center;
     background-color: #F4E4D5;

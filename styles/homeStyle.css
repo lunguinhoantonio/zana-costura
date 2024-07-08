@@ -112,12 +112,18 @@ li {
 }
 
 footer {
-    padding: 24px 24px;
+    /* padding: 24px 24px;
     margin-top: 72px;
     color: #f4f4f4;
     background-color: #B0AE99;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    margin-top: 36px;
+    color: #f4f4f4;
+    background-color: #B0AE99;
 }
 
 .hide {
@@ -127,7 +133,7 @@ footer {
 .displayFlex {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .underlined {
