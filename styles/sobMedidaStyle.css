@@ -241,14 +241,6 @@ button:hover {
     transition: 200ms;
 }
 
-.social-links {
-    display: flex;
-    background-color: #F4E4D5;
-    border-radius: 10px 10px 0px 0px;
-    justify-content: space-around;
-    padding-top: 6px;
-}
-
 #footer-copyright{
     display: flex;
     justify-content: center;
