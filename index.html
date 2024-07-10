@@ -16,10 +16,10 @@
         <header>
             <a class="link-logo" href="index.html"><img class="logo-home" src="./logo/logo-zana-costuras.png"></a>
             <section id="siteSections">
-                <a href="index.html" class="underlined">Home</a>
-                <a href="ajuda.html">Ajuda</a>
-                <a href="home.html">Produtos</a>
-                <a href="sobreNos.html">Sobre</a>
+                <a class="header-home" href="index.html" class="underlined">Home</a>
+                <a class="header-produto" href="produtos.html">Produtos</a>
+                <a class="header-ajuda" href="ajuda.html">Ajuda</a>
+                <a class="header-sobre" href="sobreNos.html">Sobre</a>
             </section>
             <section class="buscar">
                 <input id="inputBusca" onkeyup="filtrar()" type="text" placeholder="O que você procura?">
@@ -69,32 +69,33 @@
             <div class="container-cards">
                 <div class="see-products">
                     <div class="left-card">
-                        <img src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="">
+                        <img class="img-card" src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="">
                     </div>
                     <div class="right-card">
                         <h1 class="card-title">Veja nossos produtos!</h1>
                         <p class="card-description">As roupas produzidas na Zana Costuras são roupas de alta qualidade feitas à mão com design original.</p>
-                        <input class="btn" type="button" value="Ver produtos">
+                        <!-- <a href="produtos.html"><input class="btn" type="button" value="Ver produtos"></a> -->
+                         <a class="link" href="produtos.html"><input class="btn" type="button" value="Ver produtos"></a>
                     </div>
                 </div>
                 <div class="order-products">
                     <div class="left-card">
-                        <img src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="">
+                        <img class="img-card" src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="">
                     </div>
                     <div class="right-card">
                         <h1 class="card-title">Faça sua encomenda!</h1>
                         <p class="card-description">As roupas encomendadas na Zana Costuras são feitas de forma precisa e rápida.</p>
-                        <input class="btn" type="button" value="Encomende">
+                        <a class="link" href="https://wa.me/+5571988090920"><input class="btn" type="button" value="Encomende"></a>
                     </div>
                 </div>
                 <div class="about-us">
                     <div class="left-card">
-                        <img src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="">
+                        <img class="img-card" src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="">
                     </div>
                     <div class="right-card">
                         <h1 class="card-title">Sobre nós</h1>
                         <p class="card-description">Zana Costuras começou em abril de 2012 sendo fundada como uma loja de costuras encabeçada pela fundadora Zana.</p>
-                        <input class="btn" type="button" value="Saiba mais">
+                        <a class="link" href=""><input class="btn" type="button" value="Saiba mais"></a>
                     </div>
                 </div>
             </div>

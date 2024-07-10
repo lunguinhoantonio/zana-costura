@@ -32,6 +32,7 @@ h4 {
 h5{
     font-size: 1em;
     color: #f4f4f4;
+    cursor: default;
 }
 
 header{
@@ -68,7 +69,10 @@ header{
 
 }
 
-a {
+.header-home,
+.header-produto,
+.header-ajuda,
+.header-sobre {
     transition: 0.2s;
     font-size: 30px;
     color: #343434;
@@ -77,9 +81,21 @@ a {
     font-weight: 300;
 }
 
-a:hover {
-    font-size:36px;
-    text-decoration:underline;
+.header-home:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-produto:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-ajuda:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-sobre:hover {
+    font-size: 36px;
+    text-decoration: underline;
 }
 nav {
     font-size: 1em;
@@ -98,11 +114,16 @@ footer {
 footer img {
     margin: auto 0;
 }
-/* .displayFlex {
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-} */
+footer a {
+    all: unset;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0;
+    color: #f4f4f4;
+}
+footer a:hover {
+    text-decoration: underline;
+}
 .buscar {
     display: flex;
     width: 70%;
@@ -115,13 +136,6 @@ footer img {
 }
 .item-name {
     margin-left: 15px;
-}
-.nav-links a {
-    all: unset;
-    cursor: pointer;
-}
-.nav-links a:hover {
-    text-decoration: underline;
 }
 .nav-links > ul > li > ul {
     padding: 0;
@@ -210,12 +224,6 @@ footer img {
     margin-bottom: 8px;
 }
 
-#contacts a {
-    font-size: 1em;
-    margin: 0;
-    color: #f4f4f4;
-}
-
 
 /* MAIN PAGE CSS */
 
@@ -245,7 +253,7 @@ p {
     /* border: 1px solid red; */
     width: 417px;
 }
-img {
+.img-card {
     /* border: 1px solid red; */
     border-radius: 16px;
 }
@@ -271,6 +279,7 @@ img {
 .btn {
     /* border: 1px solid red; */
     all: unset;
+    text-decoration: none;
     margin: 0 auto;
     padding: 20px;
     background-color: #535353;
@@ -281,17 +290,20 @@ img {
     transition: 0.2s;
 }
 .btn:hover {
-    /* border: 1px solid red; */
     color: #535353;
     background-color: #E9B8B1;
     transform: scale(1.15);
 }
+.link {
+    text-decoration: none;
+}
 .container-cards {
-    /* border: 1px solid red; */
     margin: 36px 0px;
     padding: 0 10%;
     gap: 20px;
 }
 .img-top {
-    height: 600px;
+    height: 350px;
+    width: 100%;
+    border-radius: 0px 0px 16px 16px;
 }

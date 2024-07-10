@@ -251,7 +251,7 @@ footer {
     transition: 0.2s;
     background-color: #E9B8B1;
     border-radius: 20px;
-    font-size: 1.6em;
+    font-size: 1em;
     cursor: pointer;
     padding: 16px;
     box-shadow: 1px 1px 2px #343434;
@@ -260,7 +260,7 @@ footer {
 }
 
 .button-personalizado:hover {
-    transform: scale(1.15);
+    transform: scale(1.10);
     transition: 0.2s;
 }
 .article-personalizado {
