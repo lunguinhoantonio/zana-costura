@@ -236,14 +236,15 @@ main {
 .about-us {
     display: flex;
     flex-direction: row;
-    border-radius: 16px;
-}
-p {
-    font-size: 24px;
+    border-radius: 20px;
 }
 .order-products {
     display: flex;
     flex-direction: row-reverse;
+    border-radius: 20px;
+}
+p {
+    font-size: 24px;
 }
 .left-card {
     width: 417px;
@@ -360,6 +361,9 @@ p {
         align-items: center;
         flex-direction: column-reverse;
     }
+    #contacts {
+        margin: 8px 0;
+    }
     #contacts h5, h4, time {
         display: flex;
         justify-content: center;
@@ -381,7 +385,9 @@ p {
         display: flex;
         flex-direction: column;
         border: 2px solid #B0AE99;
-        border-radius: 16px;
+    }
+    .see-products, .about-us {
+        max-width: 740px;
     }
     .card-title {
         font-size: 24px;
