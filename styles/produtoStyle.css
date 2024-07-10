@@ -300,8 +300,8 @@ article {
     transition: 0.2s;
     background-color: #E9B8B1;
     border-radius: 20px;
-    font-size: 1.6em;
-    padding: 16px;
+    font-size: 100%;
+    padding: 8%;
     cursor: pointer;
     box-shadow: 1px 1px 2px #343434;
     color: #343434;
@@ -333,16 +333,15 @@ article {
     transition: 0.2s;
     background-color: #E9B8B1;
     border-radius: 20px;
-    font-size: 1em;
+    font-size: 100%;
     cursor: pointer;
-    padding: 16px;
+    padding: 15%;
     box-shadow: 1px 1px 2px #343434;
     color: #343434;
     font-weight: 300;
 }
 .button-personalizado:hover {
-    transform: scale(1.10);
-    transition: 0.2s;
+    transform: scale(1.15);
 }
 .article-personalizado {
     display: flex;
@@ -353,8 +352,83 @@ article {
     font-weight: 300;
 }
 
-
 #roupa-personalizada {
     display: flex;
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1080px) {
+    /* PADRÃO PARA TODAS AS PÁGINAS */
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 350px;
+        padding: 8px 0px;
+    }
+    #siteSections {
+        flex-direction: column;
+    }
+    .header-home,
+    .header-produto,
+    .header-ajuda,
+    .header-sobre {
+        display: flex;
+        align-items: center;
+        transition: 0.2s;
+        font-size: 26px;
+        color:#474747;
+        text-decoration: none;
+        margin: 4px;
+    }
+
+    .header-home:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-produto:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-ajuda:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-sobre:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    #inputBusca {
+        font-size: 16px;
+        height: 36px;
+        padding:0 22%;
+    }
+    .logo-home {
+        height: 75px;
+        margin: 12px 0px;
+    }
+    .logo-home:hover {
+        height: 90px;
+    }
+    .buscar {
+        margin-right: 0;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #contacts {
+        margin: 8px 0;
+    }
+    #contacts h5, h4, time {
+        display: flex;
+        justify-content: center;
+    }
+    #goBack {
+        height: 105px;
+        margin-bottom: 24px;
+    }
+
+}
