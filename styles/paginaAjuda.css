@@ -301,26 +301,26 @@ img {
         display: flex;
         align-items: center;
         transition: 0.2s;
-        font-size: 20px;
+        font-size: 26px;
         color:#474747;
         text-decoration: none;
         margin: 8px;
     }
 
     .header-home:hover {
-        font-size: 24px;
+        font-size: 28px;
         text-decoration: underline;
     }
     .header-produto:hover {
-        font-size: 24px;
+        font-size: 28px;
         text-decoration: underline;
     }
     .header-ajuda:hover {
-        font-size: 24px;
+        font-size: 28px;
         text-decoration: underline;
     }
     .header-sobre:hover {
-        font-size: 24px;
+        font-size: 28px;
         text-decoration: underline;
     }
 
@@ -344,6 +344,18 @@ img {
     }
     .buscar {
         margin-right: 0;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #contacts h5 {
+        display: flex;
+        justify-content: center;
+    }
+    #goBack {
+        margin-bottom: 24px;
     }
 
 }
