@@ -298,3 +298,110 @@ p {
     width: 100%;
     border-radius: 0px 0px 16px 16px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1080px) {
+    /* PADRÃO PARA TODAS AS PÁGINAS */
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 350px;
+        padding: 8px 0px;
+    }
+    #siteSections {
+        flex-direction: column;
+    }
+    .header-home,
+    .header-produto,
+    .header-ajuda,
+    .header-sobre {
+        display: flex;
+        align-items: center;
+        transition: 0.2s;
+        font-size: 26px;
+        color:#474747;
+        text-decoration: none;
+        margin: 4px;
+    }
+
+    .header-home:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-produto:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-ajuda:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-sobre:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    #inputBusca {
+        font-size: 16px;
+        height: 36px;
+        padding:0 22%;
+    }
+    .logo-home {
+        height: 75px;
+    }
+    .logo-home:hover {
+        height: 90px;
+    }
+    .buscar {
+        margin-right: 0;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #contacts h5, h4, time {
+        display: flex;
+        justify-content: center;
+    }
+    #goBack {
+        height: 105px;
+        margin-bottom: 24px;
+    }
+
+    /* MAIN PAGE CSS */
+
+    .container-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .see-products, .order-products, .about-us {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #B0AE99;
+        border-radius: 16px;
+    }
+    .card-title {
+        font-size: 31px;
+    }
+    .left-card {
+        display: flex;
+        justify-content: center;
+    }
+    .right-card {
+        display: flex;
+    }
+    .img-card {
+        width: 50%;
+        padding-top: 5%;
+    }
+    .card-description {
+        margin: 8px 0;
+        font-size: 18px;
+    }
+    .btn {
+        margin-bottom: 8px;
+    }
+
+}

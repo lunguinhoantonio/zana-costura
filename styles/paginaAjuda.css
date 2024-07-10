@@ -288,7 +288,6 @@ img {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        /* height: 200px; */
         height: 350px;
         padding: 8px 0px;
     }
@@ -324,14 +323,6 @@ img {
         font-size: 28px;
         text-decoration: underline;
     }
-
-    .perguntas-frequentes-title {
-        font-size: 28px;
-    }
-
-    .titulo-FAQ {
-        font-size: 24px;
-    }
     #inputBusca {
         font-size: 16px;
         height: 36px;
@@ -351,13 +342,21 @@ img {
         align-items: center;
         flex-direction: column-reverse;
     }
-    #contacts h5 {
+    #contacts h5, h4, time {
         display: flex;
         justify-content: center;
     }
     #goBack {
         height: 105px;
         margin-bottom: 24px;
+    }
+
+    .perguntas-frequentes-title {
+        font-size: 28px;
+    }
+
+    .titulo-FAQ {
+        font-size: 24px;
     }
 
 }
