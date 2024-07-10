@@ -400,8 +400,8 @@ p {
     }
     .img-card {
         width: 50%;
-        padding-top: 5%;
-        border-radius: 20px 20px 20px 20px;
+        margin-top: 2.5%;
+        border-radius: 20px;
     }
     .card-description {
         flex-wrap: wrap;
