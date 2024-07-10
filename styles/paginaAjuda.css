@@ -290,6 +290,7 @@ img {
         flex-direction: column;
         /* height: 200px; */
         height: 350px;
+        padding: 8px 0px;
     }
     #siteSections {
         flex-direction: column;
@@ -304,7 +305,7 @@ img {
         font-size: 26px;
         color:#474747;
         text-decoration: none;
-        margin: 8px;
+        margin: 4px;
     }
 
     .header-home:hover {
@@ -355,15 +356,8 @@ img {
         justify-content: center;
     }
     #goBack {
+        height: 105px;
         margin-bottom: 24px;
     }
 
-}
-@media screen and (max-width: 768px){
-    .logo-home {
-        height: 50px;
-    }
-    .logo-home:hover {
-        height: 62px;
-    }
 }
