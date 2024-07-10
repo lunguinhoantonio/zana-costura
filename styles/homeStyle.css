@@ -273,7 +273,7 @@ p {
     all: unset;
     text-decoration: none;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 28px;
     background-color: #535353;
     border-radius: 20px;
     cursor: pointer;
@@ -415,7 +415,7 @@ p {
     }
     .card-description {
         flex-wrap: wrap;
-        margin: 8px 0;
+        margin: 8px 12px;
         font-size: 18px;
     }
     .btn {
