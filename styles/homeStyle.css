@@ -237,7 +237,6 @@ main {
     display: flex;
     flex-direction: row;
     border-radius: 16px;
-    margin: 16px;
 }
 p {
     font-size: 24px;
@@ -376,11 +375,11 @@ p {
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding: 0px 2.5%;
     }
     .see-products, .order-products, .about-us {
         display: flex;
         flex-direction: column;
-        width: 310px;
         border: 2px solid #B0AE99;
         border-radius: 16px;
     }
@@ -400,11 +399,12 @@ p {
         padding-top: 5%;
     }
     .card-description {
+        flex-wrap: wrap;
         margin: 8px 0;
         font-size: 18px;
     }
     .btn {
-        margin-bottom: 8px;
+        margin: 8px 0px;
     }
 
 }
