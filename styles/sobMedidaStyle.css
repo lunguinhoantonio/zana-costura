@@ -1,33 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS PADRÃO PARA TODAS AS PÁGINAS */
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
-body,
-main {
+body {
     background-color: #F4F4F4;
 }
 html {
     scroll-behavior: smooth;
 }
-
 h2{
     font-size: 2.5em;
+    font-weight: 200;
+    color: #343434;
 }
 
 h3{
     font-size: 1.4em;
+    color: #343434;
 }
-
-h4{
+h4 {
     font-weight: 300;
 }
 
 h5{
     font-size: 1em;
+    color: #f4f4f4;
+    cursor: default;
 }
 
 header{
@@ -39,6 +44,105 @@ header{
     align-items: center;
     justify-content: space-between;
     font-weight: 300;
+}
+
+#inputBusca {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 22px;
+    border-radius: 9999px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+}
+::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #343434;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #474747;
+}
+
+.header-home,
+.header-produto,
+.header-ajuda,
+.header-sobre {
+    transition: 0.2s;
+    font-size: 30px;
+    color: #343434;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: 300;
+}
+
+.header-home:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-produto:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-ajuda:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-sobre:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+nav {
+    font-size: 1em;
+    padding-left: 24px;
+}
+li {
+    font-size: 16px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    color: #f4f4f4;
+    background-color: #B0AE99;
+}
+footer img {
+    margin: auto 0;
+}
+footer a {
+    all: unset;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0;
+    color: #f4f4f4;
+}
+footer a:hover {
+    transition: 0.2s;
+    text-decoration: underline;
+}
+.buscar {
+    display: flex;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: normal;
+    justify-content: center;
+    position: relative;
+    margin-right: 15%;
+}
+.item-name {
+    margin-left: 15px;
+}
+.nav-links > ul > li > ul {
+    padding: 0;
+    margin-bottom: 8px;
+}
+.icon-links {
+    font-size: 24px;
 }
 .link-logo {
     margin: 0px 2%;
@@ -52,67 +156,86 @@ header{
 
 .logo-home:hover {
     height: 120px;
-    transition: 200ms;
+}
+.contact-links {
+    display: flex;
+}
+#listaProdutos {
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    
 }
 
-::-webkit-scrollbar-track {
+#listaProdutos li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 100px;
+    margin: 0;
+}
+
+#listaProdutos li a:hover {
+    background: #ddd;
+}
+
+#siteSections {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#goBack {
+    height: 90px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #F4F4F4;
+    animation: pulse 1s infinite;
+    transition: background 200ms;
+    backdrop-filter: blur(16px);
+}
+#goBack:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#contacts {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 152px;
+    height: 100%;
+}
+
+#contacts h5 {
+    margin-bottom: 8px;
+}
+
+/* MAIN PAGE CSS */
+
+main {
     background-color: #F4F4F4;
 }
-::-webkit-scrollbar {
-    width: 12px;
-    background: #F4F4F4;
-}
-::-webkit-scrollbar-thumb {
-    background: #343434;
-    border-radius: 20px;
-    box-shadow: 2px 2px 3px #474747;
-
-}
-
 button{
     font-size: 1.6em;
     font-weight: bolder;
 }
-
-article{
-    font-size: 1em;
-}
-
-#inputBusca{
-    width: 100%;
-    height: 50px;
-    padding-left: 20px;
-    font-size: 22px;
-    border-radius: 9999px;
-    border: 1px solid #ddd;
-    background-color: #F4F4F4;
-}
 input[type='number']{
     font-size: 1em;
     text-decoration: none;
-}
-
-a{
-    transition: 0.2s;
-    font-size: 30px;
-    color:#343434;
-    text-decoration: none;
-    margin: 8px;
-    /* font-weight: normal; */
-}
-
-a:hover{
-    font-size: 36px;
-    text-decoration:underline;
-    transition: 0.2s;
-}
-
-li{
-    font-size: 16px;
-}
-
-nav {
-    padding-left: 24px;
 }
 
 .title h2 {
@@ -132,17 +255,6 @@ nav {
     justify-content: center;
     align-items: baseline;*/
     display: grid;
-}
-
-.buscar{
-    display: flex;
-    width: 70%;
-    display: flex;
-    flex-flow: column;
-    align-items: normal;
-    justify-content: center;
-    position: relative;
-    margin-right: 15%;
 }
 
 .div-infoClientes, 
@@ -176,22 +288,26 @@ nav {
 #input-quadril {
     width: 30%;
     border-radius: 6px;
+    background-color: #F4F4F4;
 }
 
 #input-telefone {
     width: 47%;
     border-radius: 6px;
+    background-color: #F4F4F4;
 }
 
 #input-tiposServico, 
 #input-tiposRoupas {
     width: 60%;
-    border-radius: 6px
+    border-radius: 6px;
+    background-color: #F4F4F4;
 }
 #input-email, 
 #input-nomeCompleto {
     width: 90%;
     border-radius: 6px;
+    background-color: #F4F4F4;
 }
 
 #input-descricaoPedido, 
@@ -199,6 +315,7 @@ nav {
 #input-infoAdd {
     width: 100%;
     border-radius: 6px;
+    background-color: #F4F4F4;
 }
 
 #input-checkboxOrcamento {
@@ -206,6 +323,7 @@ nav {
     height: 100%;
     max-width: 24px;
     max-height: 24px;
+    background-color: #F4F4F4;
 }
 #legenda-checkboxOrcamento {
     display: flex;
@@ -239,118 +357,6 @@ main button {
 button:hover {
     background-color: #d6a299;
     transition: 200ms;
-}
-
-#footer-copyright{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #E9B8B1;
-    letter-spacing: 1px;
-}
-
-#siteSections{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
-}
-
-#contacts{
-    width: 30%;
-    height: 100%;
-    display:grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-#listaProdutos{
-    display: none;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-}
-
-#listaProdutos li a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #343434;
-    font-size: 20px;
-    border: 1px solid #ddd;
-    background: #f6f6f6;
-    border-radius: 12px;
-    padding: 5px;
-    margin-left: 100px;
-    margin: 0;
-}
-
-
-#listaProdutos li a:hover{
-    background: #ddd;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px;
-    margin-top: 36px;
-    color: #f4f4f4;
-    background-color: #B0AE99;
-}
-.displayFlex {
-    display: flex;
-    align-items: center;
-}
-.nav-links a {
-    all: unset;
-    cursor: pointer;
-}
-.nav-links a:hover {
-    text-decoration: underline;
-}
-.nav-links > ul > li > ul {
-    padding: 0;
-    margin-bottom: 16px;
-}
-.icon-links {
-    font-size: 24px;
-}
-#goBack {
-    height: 90px;
-    padding: 16px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #F4F4F4;
-    animation: pulse 1s infinite;
-    transition: background 200ms;
-    backdrop-filter: blur(16px);
-}
-#goBack:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: 200ms;
-}
-
-#contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 33%;
-    height: 100%;
-}
-#contacts h5 {
-    margin-bottom: 8px;
-}
-
-#contacts a {
-    font-size: 1em;
-    margin: 0;
-    color: #f4f4f4;
 }
 
 @media screen and (min-width: 1081px){
