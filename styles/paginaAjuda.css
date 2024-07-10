@@ -212,7 +212,6 @@ footer a:hover {
 }
 
 #contacts {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     gap: 6px;

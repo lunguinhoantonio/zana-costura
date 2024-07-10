@@ -124,6 +124,9 @@ footer a:hover {
     transition: 0.2s;
     text-decoration: underline;
 }
+.underlined {
+    text-decoration: underline;
+}
 .buscar {
     display: flex;
     width: 70%;
@@ -212,7 +215,6 @@ footer a:hover {
 }
 
 #contacts {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -227,37 +229,30 @@ footer a:hover {
 /* MAIN PAGE CSS */
 
 main {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
 }
 .see-products,
 .about-us {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     border-radius: 16px;
     margin: 16px;
 }
 p {
-    /* border: 1px solid red; */
     font-size: 24px;
 }
 .order-products {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: row-reverse;
 }
 .left-card {
-    /* border: 1px solid red; */
     width: 417px;
 }
 .img-card {
-    /* border: 1px solid red; */
     border-radius: 16px;
 }
 .right-card {
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -267,16 +262,13 @@ p {
     padding: 5%;
 }
 .card-title{
-    /* border: 1px solid red; */
     margin: 0 auto;
     font-weight: 500;
 }
 .card-description {
-    /* border: 1px solid red; */
     font-weight: 400;
 }
 .btn {
-    /* border: 1px solid red; */
     all: unset;
     text-decoration: none;
     margin: 0 auto;
