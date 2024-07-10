@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* CSS PADRÃO PARA TODAS AS PÁGINAS */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,6 +31,7 @@ h4 {
 h5{
     font-size: 1em;
     color: #f4f4f4;
+    cursor: default;
 }
 
 header{
@@ -63,14 +65,12 @@ header{
     background: #343434;
     border-radius: 20px;
     box-shadow: 2px 2px 3px #474747;
-
 }
 
-p {
-    margin-left: 5%;
-}
-
-a {
+.header-home,
+.header-produto,
+.header-ajuda,
+.header-sobre {
     transition: 0.2s;
     font-size: 30px;
     color: #343434;
@@ -79,33 +79,30 @@ a {
     font-weight: 300;
 }
 
-a:hover {
-    font-size:36px;
-    text-decoration:underline;
-    transition: 0.2s;
+.header-home:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-produto:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-ajuda:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-sobre:hover {
+    font-size: 36px;
+    text-decoration: underline;
 }
 
-article {
-    font-size: 24px;
-    color: #343434;
-    font-weight: 300;
-}
 nav {
     font-size: 1em;
     padding-left: 24px;
 }
-
-main {
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 li {
     font-size: 16px;
 }
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -114,23 +111,151 @@ footer {
     color: #f4f4f4;
     background-color: #B0AE99;
 }
+footer img {
+    margin: auto 0;
+}
+footer a {
+    all: unset;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0;
+    color: #f4f4f4;
+    transition: 0.2s;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.buscar {
+    display: flex;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: normal;
+    justify-content: center;
+    position: relative;
+    margin-right: 15%;
+}
+.item-name {
+    margin-left: 15px;
+}
+.nav-links > ul > li > ul {
+    padding: 0;
+    margin-bottom: 8px;
+}
+.icon-links {
+    font-size: 24px;
+}
+.link-logo {
+    margin: 0px 2%;
+}
+.logo-home {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    transition: 200ms;
+}
+
+.logo-home:hover {
+    height: 120px;
+}
+.contact-links {
+    display: flex;
+}
+#listaProdutos {
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    
+}
+
+#listaProdutos li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 100px;
+    margin: 0;
+}
+
+#listaProdutos li a:hover {
+    background: #ddd;
+}
+
+#siteSections {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#goBack {
+    height: 90px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #F4F4F4;
+    animation: pulse 1s infinite;
+    transition: background 200ms;
+    backdrop-filter: blur(16px);
+}
+#goBack:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 152px;
+    height: 100%;
+}
+
+#contacts h5 {
+    margin-bottom: 8px;
+}
+
+/* MAIN PAGE CSS */
+
+main {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 300;
+}
 
 .hide {
     display: none;
 }
-
-.displayFlex {
-    display: flex;
-    align-items: center;
+.slider a {
+    transition: 0.2s;
+    font-size: 30px;
+    color:#343434;
+    text-decoration: none;
+    margin: 8px;
+}
+.slider a:hover {
+    font-size: 36px;
+    text-decoration:underline;
 }
 
 .underlined {
     text-decoration: underline;
-}
-
-.displayGrid {
-    display: grid;
-    align-items: center;
 }
 
 .prod {
@@ -143,7 +268,6 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 .prod:hover {
-    transition: 0.2s;
     background:#F4E4D5;
     height:47vh;
     width:27.6vw;
@@ -186,7 +310,6 @@ footer {
 
 .buyButton:hover {
     transform: scale(1.15);
-    transition: 0.2s;
 }
 
 .prodDescription {
@@ -201,48 +324,7 @@ footer {
     justify-content: center;
 }
 
-.buscar {
-    display: flex;
-    width: 70%;
-    display: flex;
-    flex-flow: column;
-    align-items: normal;
-    justify-content: center;
-    position: relative;
-    margin-right: 15%;
-}
 
-.item-name {
-    margin-left: 15px;
-}
-.nav-links a {
-    all: unset;
-    cursor: pointer;
-}
-.nav-links a:hover {
-    text-decoration: underline;
-}
-.nav-links > ul > li > ul {
-    padding: 0;
-    margin-bottom: 8px;
-}
-.icon-links {
-    font-size: 24px;
-}
-.link-logo {
-    margin: 0px 2%;
-}
-.logo-home {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    transition: 200ms;
-}
-
-.logo-home:hover {
-    height: 120px;
-    transition: 200ms;
-}
 .container-roupa-personalizada {
     display: flex;
     justify-content: center;
@@ -258,7 +340,6 @@ footer {
     color: #343434;
     font-weight: 300;
 }
-
 .button-personalizado:hover {
     transform: scale(1.10);
     transition: 0.2s;
@@ -272,77 +353,8 @@ footer {
     font-weight: 300;
 }
 
-#listaProdutos {
-    display: none;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    
-}
-
-#listaProdutos li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #343434;
-    font-size: 20px;
-    border: 1px solid #ddd;
-    background: #f4f4f4;
-    border-radius: 12px;
-    padding: 5px;
-    margin-left: 100px;
-    margin: 0;
-}
-
-#listaProdutos li a:hover {
-    background: #ddd;
-}
-
-#siteSections {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
-}
 
 #roupa-personalizada {
     display: flex;
 }
 
-#goBack {
-    height: 90px;
-    padding: 16px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #F4F4F4;
-    animation: pulse 1s infinite;
-    transition: background 200ms;
-    backdrop-filter: blur(16px);
-}
-#goBack:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: 200ms;
-}
-
-#contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 33%;
-    height: 100%;
-}
-
-#contacts h5 {
-    margin-bottom: 8px;
-}
-
-#contacts a {
-    font-size: 1em;
-    margin: 0;
-    color: #f4f4f4;
-}
