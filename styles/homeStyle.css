@@ -374,18 +374,21 @@ p {
 
     .container-cards {
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
     .see-products, .order-products, .about-us {
         display: flex;
         flex-direction: column;
+        width: 310px;
         border: 2px solid #B0AE99;
         border-radius: 16px;
     }
     .card-title {
-        font-size: 31px;
+        font-size: 24px;
     }
     .left-card {
+        width: 100%;
         display: flex;
         justify-content: center;
     }
