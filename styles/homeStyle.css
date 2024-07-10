@@ -237,6 +237,7 @@ main {
     display: flex;
     flex-direction: row;
     border-radius: 20px;
+    margin: 24px 0;
 }
 .order-products {
     display: flex;
@@ -246,11 +247,8 @@ main {
 p {
     font-size: 24px;
 }
-.left-card {
-    width: 417px;
-}
 .img-card {
-    border-radius: 16px;
+    border-radius: 20px;
 }
 .right-card {
     display: flex;
@@ -259,7 +257,7 @@ p {
     justify-content: space-around;
     color: #343434;
     width: 100%;
-    padding: 5%;
+    padding: 2.5%;
 }
 .card-title{
     margin: 0 auto;
@@ -293,10 +291,9 @@ p {
     padding: 0 10%;
     gap: 20px;
 }
-.img-top {
+.image-top {
     height: 350px;
     width: 100%;
-    border-radius: 0px 0px 16px 16px;
 }
 
 /* MEDIA QUERIES */
@@ -349,6 +346,7 @@ p {
     }
     .logo-home {
         height: 75px;
+        margin: 12px 0px;
     }
     .logo-home:hover {
         height: 90px;
@@ -384,7 +382,7 @@ p {
     .see-products, .order-products, .about-us {
         display: flex;
         flex-direction: column;
-        border: 2px solid #B0AE99;
+        border: 2px solid #E9B8B1;
     }
     .see-products, .about-us {
         max-width: 740px;
@@ -403,6 +401,7 @@ p {
     .img-card {
         width: 50%;
         padding-top: 5%;
+        border-radius: 20px 20px 20px 20px;
     }
     .card-description {
         flex-wrap: wrap;

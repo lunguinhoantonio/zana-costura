@@ -330,6 +330,7 @@ img {
     }
     .logo-home {
         height: 75px;
+        margin: 12px 0px;
     }
     .logo-home:hover {
         height: 90px;
@@ -341,6 +342,9 @@ img {
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
+    }
+    #contacts {
+        margin: 8px 0;
     }
     #contacts h5, h4, time {
         display: flex;
