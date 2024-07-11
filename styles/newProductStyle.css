@@ -148,7 +148,8 @@ footer a:hover {
     padding: 0;
     margin-bottom: 8px;
 }
-.nav-links h5, li > a {
+.nav-links h5,
+footer li > a {
     display: flex;
     justify-content: center;
 }
