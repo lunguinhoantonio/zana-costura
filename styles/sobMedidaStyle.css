@@ -299,6 +299,11 @@ select {
     font-weight: 400;
     color: #343434;
 }
+.solicitar-orcamento {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
 #input-altura, 
 #input-busto, 
@@ -344,6 +349,8 @@ select {
     max-width: 24px;
     max-height: 24px;
     background-color: #F4F4F4;
+    accent-color: #E9B8B1;
+    color: #F4F4F4;
 }
 #legenda-checkboxOrcamento {
     display: flex;
