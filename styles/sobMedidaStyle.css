@@ -471,6 +471,9 @@ button:hover {
     #goBack {
         margin-bottom: 24px;
     }
+    nav {
+        padding-left: 0;
+    }
 
     /* MAIN PAGE CSS */
 

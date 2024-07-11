@@ -474,6 +474,12 @@ footer li > a {
     #goBack {
         margin-bottom: 24px;
     }
+    nav {
+        padding-left: 0;
+    }
+
+    /* MAIN PAGE CSS */
+    
     .container-products0 {
         display: flex;
         align-items: center;
