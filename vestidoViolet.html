@@ -206,6 +206,27 @@
     <div class="backTop">
         <ion-icon name="arrow-up" id="goBack" onclick="scrollToTop()" style="color: #343434;"></ion-icon>
     </div>
+    
+        <!-- SCRIPT PARA APARECER O BOTÃO DE VOLTAR DEPOIS DA TELA DESCER UM POUCO -->
+
+        <script>
+            const header = document.querySelector('header');
+            const button = document.getElementById('goBack');
+            window.onscroll = (ev) => {
+              if (document.documentElement.scrollTop > header.getBoundingClientRect().y) {
+                button.style.display = 'block';
+                button.style.animation = 'fadeIn';
+                button.style.animationDuration = '0.5s';
+              } else {
+                button.style.display = 'none'; 
+                button.style.animation = 'fadeOut';
+                button.style.animationDuration = '0.5s';
+              } 
+            };
+            button.addEventListener('click', () => {
+              document.documentElement.scrollTop = 0;
+            });
+        </script>
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

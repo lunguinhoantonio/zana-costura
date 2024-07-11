@@ -214,6 +214,7 @@ footer a:hover {
     width: 80%;
 }
 #goBack {
+    display: none;
     font-size: 30px;
     padding: 16px;
     border-radius: 50%;
