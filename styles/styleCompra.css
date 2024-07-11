@@ -408,7 +408,8 @@ table {
     background-color: #f5f5f5;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE */
+
 @media (max-width: 1080px) {
     /* PADRÃO PARA TODAS AS PÁGINAS */
     header {

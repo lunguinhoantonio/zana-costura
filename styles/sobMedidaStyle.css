@@ -394,6 +394,8 @@ button:hover {
     transition: 200ms;
 }
 
+/* RESPONSIVIDADE */
+
 @media screen and (min-width: 1081px){
     .wrapper {
         display: grid;

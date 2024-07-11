@@ -293,7 +293,6 @@ footer a:hover {
     justify-content: space-evenly;
     padding: 0 2.5%;
     flex-wrap: wrap;
-    margin: 0px 0px 24px;
 }
 .product {
     border: 3px solid #E9B8B1;
@@ -370,6 +369,41 @@ footer a:hover {
     background-color: #E9B8B1;
     border: 3px solid #F4F4F4;
 }
+.container-roupa-personalizada {
+    display: flex;
+    padding: 0 2.5%;
+    justify-content: center;
+    margin: 0px 0px 24px;
+}
+.button-personalizado {
+    transition: 0.2s;
+    background-color: #E9B8B1;
+    border-radius: 20px;
+    font-size: 100%;
+    cursor: pointer;
+    padding: 15%;
+    box-shadow: 1px 1px 2px #343434;
+    color: #343434;
+    font-weight: 300;
+}
+.button-personalizado:hover {
+    transform: scale(1.15);
+}
+.article-personalizado {
+    display: flex;
+    justify-content: center;
+    margin: 0 7.5%;
+    font-size: 24px;
+    color: #343434;
+    font-weight: 300;
+}
+
+#roupa-personalizada {
+    display: flex;
+    flex-direction: column;
+}
+
+/* RESPONSIVIDADE */
 
 @media screen and (max-width: 1080px) {
     /* PADRÃO PARA TODAS AS PÁGINAS */

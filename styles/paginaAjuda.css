@@ -305,7 +305,7 @@ img {
 }
 
 
-/* MEDIA QUERIES */
+/* RESPONSIVIDADE */
 
 @media screen and (max-width: 1080px) {
     header {

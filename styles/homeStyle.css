@@ -408,7 +408,7 @@ p {
     .see-products, .order-products, .about-us {
         display: flex;
         flex-direction: column;
-        border: 2px solid #E9B8B1;
+        border: 3px solid #E9B8B1;
     }
     .see-products, .about-us {
         max-width: 740px;
