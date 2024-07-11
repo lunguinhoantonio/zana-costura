@@ -109,6 +109,7 @@ footer {
     padding: 24px;
     color: #f4f4f4;
     background-color: #B0AE99;
+    animation: fadeIn 0.5s;
 }
 footer img {
     margin: auto 0;
@@ -245,6 +246,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     background-color: #F4E4D5;
+    animation: fadeIn 1s;
 }
 
 .perguntas-frequentes-title {

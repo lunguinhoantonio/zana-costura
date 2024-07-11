@@ -244,6 +244,9 @@ footer a:hover {
 .hide {
     display: none;
 }
+.slider {
+    animation: fadeIn 0.5s;
+}
 .slider a {
     transition: 0.2s;
     font-size: 30px;
@@ -272,15 +275,13 @@ footer a:hover {
     margin: 24px 0;
     width: 500px;
     height: 400px;
+    animation: fadeIn 0.5s;
     transition: 0.2s;
 }
 .product:hover {
     background-color: #efc1ba;
     box-shadow: 2px 2px 3px #343434;
     transform: scale(1.025);
-}
-.img-card:hover ~ .product {
-    box-shadow: 2px 2px 3px #343434;
 }
 .left-card {
     display: flex;
