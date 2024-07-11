@@ -111,9 +111,6 @@ footer {
     background-color: #B0AE99;
     animation: fadeIn 0.5s;
 }
-footer img {
-    margin: auto 0;
-}
 footer a {
     all: unset;
     cursor: pointer;
