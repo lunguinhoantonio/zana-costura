@@ -138,7 +138,9 @@ footer a:hover {
     margin-left: 15px;
 }
 .nav-links {
+    justify-content: space-evenly;
     width: 157px;
+    height: 100%;
 }
 .nav-links > ul > li > ul {
     padding: 0;
@@ -148,6 +150,9 @@ footer a:hover {
 footer li > a {
     display: flex;
     justify-content: center;
+}
+.nav-links h5 {
+    margin: 8px 0px;
 }
 .icon-links {
     font-size: 24px;
@@ -229,6 +234,7 @@ footer li > a {
 #contacts {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 6px;
     width: 157px;
     height: 100%;
