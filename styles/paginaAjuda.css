@@ -279,6 +279,9 @@ details {
     animation: ease-in-out 0.35s;
     transition: 200ms;
 }
+.titulo-FAQ:hover {
+    cursor: pointer;
+}
 
 
 summary {
