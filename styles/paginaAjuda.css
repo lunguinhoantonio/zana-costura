@@ -105,11 +105,10 @@ li {
 }
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 24px;
     color: #f4f4f4;
     background-color: #B0AE99;
-    animation: fadeIn 0.5s;
 }
 footer img {
     margin: auto 0;
@@ -171,6 +170,12 @@ footer a:hover {
 .contact-links {
     display: flex;
 }
+.backTop {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    padding: 5px 10px;
+}
 #listaProdutos {
     display: none;
     width: 100%;
@@ -209,12 +214,12 @@ footer a:hover {
     animation: fadeIn 0.5s;
 }
 #goBack {
-    height: 90px;
+    font-size: 30px;
     padding: 16px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #F4F4F4;
-    animation: pulse 1s infinite;
+    background-color: #E9B8B1;
+    border: 2px solid #343434;
+    animation: pulse 1.25s infinite;
     transition: background 200ms;
     backdrop-filter: blur(16px);
 }
