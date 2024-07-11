@@ -28,7 +28,7 @@ function sendSobMedida(){
     let userName = document.getElementById('input-nomeCompleto').value;
     let userEmail = document.getElementById('input-email').value;
     let userAdress = document.getElementById('input-endereco').value;
-    let typeOfServise = document.getElementById('input-tiposServico').value;
+    let typeOfService = document.getElementById('input-tiposServico').value;
     let typeOfClothe = document.getElementById('input-tiposRoupas').value;
     let descricao = document.getElementById('input-descricaoPedido').value;
     let busto = document.getElementById('input-busto').value;
@@ -82,7 +82,7 @@ function sendSobMedida(){
                     Meu email: ${userEmail}
                     Meu endereço: ${userAdress}
     
-                    Tipo de serviço: ${typeOfServise}
+                    Tipo de serviço: ${typeOfService}
                     Tipo de roupa: ${typeOfClothe}
     
                     Descrição do pedido: ${descricao}
@@ -103,7 +103,7 @@ function sendSobMedida(){
                     Obrigado(a)`);
         location.href=('https://wa.me/5571988090920?text=' + text);
     }
-    }
+}
 
 function filtrar() {
     var input,
@@ -150,10 +150,6 @@ function filtrar() {
         ul.style.display = "block";
     }
     
-}
-
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 document.addEventListener('click',e=>{
