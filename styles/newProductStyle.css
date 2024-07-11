@@ -218,13 +218,15 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    width: 152px;
+    width: 155px;
     height: 100%;
 }
 
 #contacts h5 {
     margin-bottom: 8px;
 }
+
+/* MAIN PAGE CSS */
 
 .hide {
     display: none;
