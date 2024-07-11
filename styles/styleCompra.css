@@ -519,6 +519,9 @@ table {
     .size-chart td {
         padding: 2px;
     }
+    .size-chart {
+        padding: 20px 10px 10px;
+    }
     footer {
         flex-wrap: wrap;
     }
