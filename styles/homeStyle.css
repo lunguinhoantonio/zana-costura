@@ -109,6 +109,7 @@ footer {
     padding: 24px;
     color: #f4f4f4;
     background-color: #B0AE99;
+    animation: fadeIn 0.5s;
 }
 footer img {
     margin: auto 0;
@@ -211,7 +212,6 @@ footer a:hover {
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
-    animation: fadeIn 0.5s;
 }
 #goBack {
     font-size: 30px;
