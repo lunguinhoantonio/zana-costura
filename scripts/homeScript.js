@@ -37,15 +37,19 @@ function sendSobMedida(){
     let comprimentoPerna = document.getElementById('input-comprimentoPerna').value;
     let comprimentoBraco = document.getElementById('input-comprimentoBraco').value;
     let altura = document.getElementById('input-altura').value;
-    let boleanOrcamento = document.getElementById('input-checkboxOrcamento');
+    let booleanOrcamento = document.getElementById('input-checkboxOrcamento');
     let observacao = document.getElementById('input-infoAdd').value;
     let condRequisicaoOrcamento = '';
 
-    if(boleanOrcamento.checked){
-        condRequisicaoOrcamento = 'Gostaria de solicitar um orçamento';
+    if(booleanOrcamento.checked){
+        condRequisicaoOrcamento = ' Gostaria de solicitar um orçamento';
     }
     else{
         condRequisicaoOrcamento = '';
+    }
+
+    if(observacao == ''){
+        observacao = ' Nenhuma observação';
     }
 
     if(userName == ''){
