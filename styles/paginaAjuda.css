@@ -206,6 +206,7 @@ footer a:hover {
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
+    animation: fadeIn 0.5s;
 }
 #goBack {
     height: 90px;
