@@ -515,12 +515,16 @@ table {
         justify-content: center;
         color: #343434;
     }
+    .size-chart th,
+    .size-chart td {
+        padding: 2px;
+    }
     footer {
         flex-wrap: wrap;
     }
     
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .product-details {
         margin: 10px auto;
     }
