@@ -10,7 +10,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background-color: #F4F4F4;
+    background-color: #F4E4D5;
 }
 html {
     scroll-behavior: smooth;
@@ -105,7 +105,7 @@ li {
 }
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 24px;
     color: #f4f4f4;
     background-color: #B0AE99;
@@ -170,6 +170,12 @@ footer a:hover {
 .contact-links {
     display: flex;
 }
+.backTop {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    padding: 5px 10px;
+}
 #listaProdutos {
     display: none;
     width: 100%;
@@ -208,12 +214,12 @@ footer a:hover {
     animation: fadeIn 0.5s;
 }
 #goBack {
-    height: 90px;
+    font-size: 30px;
     padding: 16px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid #F4F4F4;
-    animation: pulse 1s infinite;
+    background-color: #E9B8B1;
+    border: 2px solid #343434;
+    animation: pulse 1.25s infinite;
     transition: background 200ms;
     backdrop-filter: blur(16px);
 }
@@ -290,7 +296,7 @@ footer a:hover {
     margin: 0px 0px 24px;
 }
 .product {
-    border: 2px solid #E9B8B1;
+    border: 3px solid #E9B8B1;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -354,16 +360,15 @@ footer a:hover {
     font-size: 24px;
     padding: 16px 24px;
     cursor: pointer;
-    border: 2px solid #E9B8B1;
+    border: 3px solid #E9B8B1;
     color: #343434;
     font-weight: 300;
     transition: 0.2s;
 }
 .buyButton:hover {
-    transform: scale(1.075);
+    transform: scale(1.0625);
     background-color: #E9B8B1;
-    border: 2px solid #F4F4F4;
-    box-shadow: 2px 2px 3px #F4F4F4;
+    border: 3px solid #F4F4F4;
 }
 
 @media screen and (max-width: 1080px) {
@@ -431,7 +436,6 @@ footer a:hover {
         margin: 8px 0;
     }
     #goBack {
-        height: 105px;
         margin-bottom: 24px;
     }
     .container-products0 {
