@@ -225,6 +225,10 @@ footer a:hover {
 #contacts h5 {
     margin-bottom: 8px;
 }
+#contacts h5, h4, time {
+    display: flex;
+    justify-content: center;
+}
 
 /* MAIN PAGE CSS */
 
@@ -349,10 +353,7 @@ img {
     #contacts {
         margin: 8px 0;
     }
-    #contacts h5, h4, time {
-        display: flex;
-        justify-content: center;
-    }
+    
     #goBack {
         height: 105px;
         margin-bottom: 24px;

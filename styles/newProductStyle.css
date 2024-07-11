@@ -225,6 +225,10 @@ footer a:hover {
 #contacts h5 {
     margin-bottom: 8px;
 }
+#contacts h5, h4, time {
+    display: flex;
+    justify-content: center;
+}
 
 /* MAIN PAGE CSS */
 
@@ -327,4 +331,74 @@ footer a:hover {
     background-color: #E9B8B1;
     border: 2px solid #F4F4F4;
     box-shadow: 2px 2px 3px #F4F4F4;
+}
+
+@media screen and (max-width: 1080px) {
+    /* PADRÃO PARA TODAS AS PÁGINAS */
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 350px;
+        padding: 8px 0px;
+    }
+    #siteSections {
+        flex-direction: column;
+    }
+    .header-home,
+    .header-produto,
+    .header-ajuda,
+    .header-sobre {
+        display: flex;
+        align-items: center;
+        transition: 0.2s;
+        font-size: 26px;
+        color:#474747;
+        text-decoration: none;
+        margin: 4px;
+    }
+
+    .header-home:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-produto:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-ajuda:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-sobre:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    #inputBusca {
+        font-size: 16px;
+        height: 36px;
+        padding:0 22%;
+    }
+    .logo-home {
+        height: 75px;
+        margin: 12px 0px;
+    }
+    .logo-home:hover {
+        height: 90px;
+    }
+    .buscar {
+        margin-right: 0;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #contacts {
+        margin: 8px 0;
+    }
+    #goBack {
+        height: 105px;
+        margin-bottom: 24px;
+    }
 }
