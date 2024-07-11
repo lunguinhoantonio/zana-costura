@@ -251,20 +251,42 @@ footer a:hover {
     transition: 0.2s;
     font-size: 30px;
     color:#343434;
+    font-weight: 300;
     text-decoration: none;
-    margin: 8px;
+    margin: 12px;
+}
+.primeiro,.segundo,.terceiro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .slider a:hover {
     font-size: 36px;
     text-decoration:underline;
 }
-
+.slider a > img {
+    width: 200px;
+    height: 300px;
+    transition: 0.2s;
+}
+.slider a > img:hover {
+    transform: scale(1.1);
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #343434;
+    font-weight: 300;
+    margin: 24px 0px 0px;
+    text-decoration: underline;
+}
 .container-products0 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 2.5%;
     flex-wrap: wrap;
-    margin: 24px 0px;
+    margin: 0px 0px 24px;
 }
 .product {
     border: 2px solid #E9B8B1;
@@ -272,7 +294,7 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     padding: 16px;
-    margin: 24px 0;
+    margin: 24px;
     width: 500px;
     height: 400px;
     animation: fadeIn 0.5s;
@@ -410,5 +432,39 @@ footer a:hover {
     #goBack {
         height: 105px;
         margin-bottom: 24px;
+    }
+    .container-products0 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 2.5%;
+    }
+    .product {
+        height: 100%;
+        width: 100%;
+        margin: 24px auto;
+        flex-direction: column;
+    }
+    .left-card {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .buyButton {
+        margin: 16px 0;
+    }
+    .product-description,
+    .h1Price {
+        margin: 8px auto;
+    }
+    .slider {
+        display: flex;
+        flex-direction: column;
+    }
+    .slider a {
+        font-size: 24px;
+    }
+    .slider a:hover {
+        font-size: 28px;
     }
 }

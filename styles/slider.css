@@ -6,11 +6,10 @@ section.slider{
     overflow: hidden;
 }
 .img-desktop{
-    margin-top: 50px;    
+    margin-top: 56px;    
 }
 .slider-content{
     width: 400%;
-    height: auto;
     display: flex;
 }
 .slider-content input{
@@ -19,7 +18,7 @@ section.slider{
 .slide-box{
     background-color: #F4E4D5;
     width: 25%;
-    height: auto;
+    height: 28%;
     position: relative;
     text-align: center;
     transition: 0.5s;
@@ -27,12 +26,12 @@ section.slider{
 .slide-box img{
     width: 200px;
     height: 300px;
-    margin: 70px auto 7px;
+    margin: 36px auto 7px;
 }
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 1.25%;
+    margin-top: 1%;
     display: flex;
     justify-content: center;
 }
@@ -72,6 +71,12 @@ a{
     text-decoration: none;
     color: #343434;
 }
-/* .img-desktop{
 
-} */
+@media screen and (max-width: 1080px){
+    .slide-box img {
+        margin: 24px auto 7px;
+    }
+    .nav-manual, .nav-auto{
+        margin-top: 2%;
+    }
+}
