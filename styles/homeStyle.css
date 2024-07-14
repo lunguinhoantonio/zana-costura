@@ -316,7 +316,6 @@ p {
 .container-cards {
     margin: 24px 0px;
     padding: 0 10%;
-    gap: 20px;
     animation: fadeIn 0.5s;
 }
 .image-top {
