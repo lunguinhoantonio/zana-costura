@@ -374,6 +374,7 @@ table {
     display: flex;
     flex-direction: column;
     color: #343434;
+    text-align: justify;
 }
 
 .product-description, .size-chart {
