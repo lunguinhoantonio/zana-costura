@@ -291,6 +291,7 @@ p {
     font-weight: 500;
 }
 .card-description {
+    text-align: justify;
     font-weight: 400;
 }
 .btn {
