@@ -294,6 +294,9 @@ table {
     border: 1px solid #343434;
     transition: 0.2s;
 }
+.thumbnail.active {
+    border: 1px solid #343434;
+}
 
 .product-details {
     flex: 1;
