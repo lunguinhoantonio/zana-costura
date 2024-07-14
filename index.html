@@ -10,6 +10,7 @@
         <script src="./scripts/homeScript.js"></script>
         <!-- CSS  -->
         <link rel="stylesheet" href="./styles/homeStyle.css">
+        <link rel="stylesheet" href="./styles/homeSlider.css">
         <!-- FAVICON  -->
         <link rel="icon" href="./logo/zana costuras Logo.png">
 
@@ -67,7 +68,13 @@
             </section>
         </header>
         <main>
-            <img class="image-top" src="./image/slide unico.jpg" alt="">
+            <div class="carousel" role="group" aria-label="infinite loop carousel demo" aria-roledescription="carousel">
+                <div class="carousel-slider" id="slides" aria-atomic="false" aria-live="off">
+                  <div class="carousel-slide" id="slide1" role="group" aria-label="1 of 3" aria-roledescription="slide"><img src="./image/homeSlider/produzindo-roupas-com-carinho.png" alt="Image 1"></div>
+                  <div class="carousel-slide" id="slide2" role="group" aria-label="2 of 3" aria-roledescription="slide"><img src="./image/homeSlider/cuidado-carinho-paixao.png" alt="Image 2"></div>
+                  <div class="carousel-slide" id="slide3" role="group" aria-label="3 of 3" aria-roledescription="slide"><img src="./image/homeSlider/feito-para-você.png" alt="Image 3"></div>
+                </div>
+            </div>
             <div class="header-extended"></div>
             <div class="container-cards">
                 <div class="see-products">
@@ -173,5 +180,6 @@
         </script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="scripts/homeSlide.js"></script>
     </body>
 </html>
