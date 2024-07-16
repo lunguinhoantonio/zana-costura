@@ -153,10 +153,29 @@ function filtrar() {
     } else {
         ul.style.display = "block";
     }
+    if (count === 0) {
+        ul.style.display = "none";
+    } else {
+        ul.style.display = "block";
+    }
+
+    document.addEventListener('click', function(event) {
+        var input = document.getElementById('inputBusca');
+        var ul = document.getElementById('listaProdutos');
+        
+        if (!input.contains(event.target) && !ul.contains(event.target)) {
+            ul.style.display = 'none';
+        }
+    });
+    
+    document.getElementById('inputBusca').addEventListener('focus', function() {
+        var ul = document.getElementById('listaProdutos');
+        ul.style.display = 'block';
+    });
     
 }
 
-document.addEventListener('click',e=>{
+document.addEventListener('click', e =>{
     if(!ul.contains(e.target) && e.target !== input){
         ul.classList.add('hide') 
     }
