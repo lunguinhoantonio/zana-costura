@@ -296,19 +296,18 @@ p {
 }
 .btn {
     all: unset;
-    text-decoration: none;
-    margin: 0 auto;
-    padding: 20px 28px;
-    background-color: #535353;
+    background-color: #F4E4D5;
     border-radius: 20px;
+    font-size: 24px;
+    padding: 16px 24px;
     cursor: pointer;
-    color: #F4F4F4;
-    box-shadow: 2px 2px 3px #343434;
+    border: 3px solid #E9B8B1;
+    color: #343434;
+    font-weight: 300;
     transition: 0.2s;
 }
 .btn:hover {
-    color: #535353;
-    background-color: #E9B8B1;
+    background-color: rgba(233, 184, 177, 0.7);
     transform: scale(1.15);
 }
 .link {
