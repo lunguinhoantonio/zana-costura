@@ -14,14 +14,14 @@
     text-decoration: none;
     margin: 12px;
 }
+.slider a:hover {
+    transform: scale(1.1);
+    text-decoration:underline;
+}
 .primeiro,.segundo,.terceiro {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.slider a:hover {
-    font-size: 36px;
-    text-decoration:underline;
 }
 .slider a > img {
     width: 200px;
@@ -194,6 +194,6 @@
         font-size: 24px;
     }
     .slider a:hover {
-        font-size: 28px;
+        transform: scale(1.15);
     }
 }
